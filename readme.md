@@ -1,11 +1,13 @@
-# UPMC - Projet tutoré
+# UPMC - Projet tutorÃ©
 
 Boutique e-commerce de jardinage avec Laravel et Avored
 
 ## Install
 
-1) `composer install`
+1) Configurer la BDD dans le fichier .env 
 
-2) `npm install`
+2) `composer install`
 
-3) `php artisan avored:install`
+3) `npm install`
+
+4) `php artisan avored:install`
