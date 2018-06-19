@@ -1,4 +1,4 @@
-# UPMC - Projet tutoré
+# UPMC - Projet tutoré Raclette & Binette
 
 Boutique e-commerce de jardinage avec Laravel et Avored
 
