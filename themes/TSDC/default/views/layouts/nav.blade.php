@@ -1,15 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
     <div class="container">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/avored/laravel-ecommerce"><i class="fab fa-github"></i> GitHub</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/avoredecommerce/"><i class="fab fa-facebook"></i> Facebook</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
-            </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="{{ URL('forums') }}">Forum
+                  <span class="sr-only">(current)</span>
+              </a>
+          </li>
         </ul>
         <ul class="navbar-nav">
 
@@ -76,7 +72,7 @@
         </div>
     </div>
 </header>
-   
+
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
