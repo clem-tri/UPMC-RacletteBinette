@@ -14,7 +14,8 @@
 
     <link href="{{ asset('vendor/tsdc-default/css/app.css') }}" rel="stylesheet">
     @stack('styles')
-    <!-- Scripts -->
+    @yield('css')
+        <!-- Scripts -->
     <script>
         window.Laravel = <?php
         echo json_encode([
@@ -22,7 +23,7 @@
         ]);
         ?>
     </script>
-   
+
 </head>
 <body>
 <script src="{{ asset('/vendor/tsdc-default/js/app.js') }}"></script>
@@ -59,5 +60,6 @@
 
 @include('layouts.footer')
 @stack('scripts')
+@yield('js')
 </body>
 </html>
