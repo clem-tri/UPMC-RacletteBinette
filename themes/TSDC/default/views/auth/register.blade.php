@@ -8,7 +8,7 @@
         <div class="row justify-content-center">
             <div class="col-6">
                 <div class="card">
-                    <div class="card-header">Register</div>
+                    <div class="card-header">S'inscrire</div>
                     <div class="card-body">
 
                         <div class="col-12">
@@ -16,7 +16,7 @@
                                 {{ csrf_field() }}
 
                                 <div class="form-group">
-                                    <label for="first_name">First Name</label>
+                                    <label for="first_name">Prénom</label>
                                     <input id="first_name" type="text"
                                            @if($errors->has('first_name'))
                                            class="form-control is-invalid"
@@ -35,7 +35,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="last_name">Last Name</label>
+                                    <label for="last_name">Nom</label>
                                     <input id="last_name" type="text"
                                            @if($errors->has('last_name'))
                                            class="form-control is-invalid"
@@ -55,7 +55,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">E-Mail Address</label>
+                                    <label for="email">Adresse e-mail</label>
                                     <input id="email" type="email"
                                            @if($errors->has('email'))
                                            class="form-control is-invalid"
@@ -75,7 +75,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="password">Password</label>
+                                    <label for="password">Mot de passe</label>
                                     <input id="password" type="password"
                                            @if($errors->has('password'))
                                            class="form-control is-invalid"
@@ -92,7 +92,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="password-confirm">Confirm Password</label>
+                                    <label for="password-confirm">Confirmer le mot de passe</label>
                                     <input id="password-confirm" type="password"
                                            @if($errors->has('password_confirmation'))
                                            class="form-control is-invalid"
@@ -112,7 +112,7 @@
                                 <div class="form-group">
 
                                     <button type="submit" class="btn btn-primary">
-                                        Register
+                                        S'inscrire
                                     </button>
 
                                 </div>

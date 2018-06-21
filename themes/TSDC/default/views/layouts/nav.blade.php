@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
     <div class="container">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+           {{-- <li class="nav-item">
                 <a class="nav-link" href="https://github.com/avored/laravel-ecommerce"><i class="fab fa-github"></i> GitHub</a>
             </li>
             <li class="nav-item">
@@ -9,7 +9,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
-            </li>
+            </li>--}}
         </ul>
         <ul class="navbar-nav">
 
@@ -30,17 +30,11 @@
             @endauth
 
             @guest()
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Welcome msg!
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">Sign In </a>
+                <a class="nav-link" href="{{ route('login') }}">Se connecter </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('register') }}">Create an Account</a>
+                <a class="nav-link" href="{{ route('register') }}">Créer un compte</a>
             </li>
             @endguest()
 
@@ -61,7 +55,7 @@
             <div class="col-md-6">
                 <form class="navbar-form" action="{{ route('search.result') }}" method="get" role="search">
                     <div class="input-group" style="padding-top: 14px;">
-                        <input type="text" class="form-control" placeholder="Search entire store here..." name="q">
+                        <input type="text" class="form-control" placeholder="Chercher dans le magasin..." name="q">
                         <div class="input-group-btn">
                             <button class="btn btn-primary" type="submit">
                                 <i class="fa fa-search"></i>

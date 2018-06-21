@@ -1,10 +1,10 @@
 <div class="panel">
     <div class="panel-body">
-        <h6>Filter By Product Attributes</h6>
+        <h6>Filtres</h6>
         <hr/>
 
         @if(($category->children->count()) > 0)
-            <h4>Sub Categories</h4>
+            <h4>Sous Categories</h4>
             <ul class="list-group">
                 @foreach($category->children as $subCategory)
                     <li class="list-group-item">

@@ -8,7 +8,7 @@
     <div class="row mt-4 mb-4 justify-content-center">
         <div class="col-6">
             <div class="card">
-                <div class="card-header"><span>AvoRed Login</span></div>
+                <div class="card-header"><span>Se connecter</span></div>
                 <div class="card-body">
                     <div class="col-12">
                         <form method="POST"
@@ -16,7 +16,7 @@
                             {{ csrf_field() }}
 
                             <div class="form-group">
-                                <label for="email">E-Mail Address</label>
+                                <label for="email">Adresse e-mail</label>
 
 
                                 <input id="email" type="email" name="email"
@@ -32,7 +32,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">Mot de passe</label>
                                 <input id="password"
                                        class="form-control {{ $errors->has('password') ? ' has-error' : '' }}"
                                        type="password" name="password" required>
@@ -48,7 +48,7 @@
                             <div class="checkbox">
                                 <label>
                                     <input id="rememberme" type="checkbox" name="remember"/>
-                                    Remember Me
+                                    Se souvenir de moi
                                 </label>
                             </div>
 
@@ -56,27 +56,34 @@
                             <div class="form-group">
 
                                 <button type="submit" class="btn btn-primary">
-                                    Login
+                                    Se connecter
                                 </button>
+                            </div>
 
-                                <a class="" href="{{ url('/password/reset') }}">
-                                    Forgot Your Password?
-                                </a>
-                                <a class="" href="{{ url('register') }}">
-                                    Create an Account
-                                </a>
+                                <div class="form-group">
+                                   <a class="" href="{{ url('/password/reset') }}">
+                                     Mot de passe oublié?
+                                  </a>
+                                </div>
+
+                                <div>
+                                    <a class="" href="{{ url('register') }}">
+                                        Créer un compte
+                                    </a>
+                                </div>
+
 
 
                                 @if($errors->has('enableResendLink'))
                                     <div class="form-group">
 
                                         <a class="" href="{{ route('user.activation.resend') }}">
-                                            Resend Activation Email
+                                            Renvoyer le code d'activation
                                         </a>
                                     </div>
                                 @endif
 
-                            </div>
+
 
 
                         </form>
