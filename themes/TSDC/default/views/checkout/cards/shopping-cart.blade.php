@@ -5,9 +5,9 @@
         <table id="cart_table" class="table table-bordered table-hover ">
             <thead>
             <tr>
-                <th class="text-left">Product Name</th>
-                <th class="text-right hidden-xs">Quantity</th>
-                <th class="text-right hidden-xs">Unit Price</th>
+                <th class="text-left">Nom du produit</th>
+                <th class="text-right hidden-xs">Quantité</th>
+                <th class="text-right hidden-xs">Prix unitaire</th>
                 <th class="text-right">Total</th>
             </tr>
             </thead>

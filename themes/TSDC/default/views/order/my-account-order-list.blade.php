@@ -12,14 +12,14 @@
 
             <div class="main-title-wrap">
                 <span class="title">
-                    Order List
+                    <h1>Liste des commandes</h1>
                     <!--<small>Sub title</small> -->
                 </span>
             </div>
             <div class="clearfix"></div>
             <br/>
             @if(count($orders) <= 0)
-                <p>Sorry No Order Found</p>
+                <p>Désolé, aucun commande trouvée...</p>
             @else
                 <table class="table table-bordered table-responsive">
                     <thead>

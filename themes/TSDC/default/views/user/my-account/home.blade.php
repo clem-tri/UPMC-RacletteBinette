@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('meta_title','My Account E commerce')
-@section('meta_description','My Account E commerce')
+@section('meta_title','Mon compte - Chez Raclette et Binette')
+@section('meta_description','Mon compte - Chez Raclette et Binette')
 
 
 @section('content')
@@ -14,7 +14,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    Profile Details Panel
+                   Profil utilisateur
                 </div>
                 <div class="card-body">
 
@@ -22,11 +22,11 @@
                     <table class=" table">
                         <tbody>
                         <tr>
-                            <th>First Name</th>
+                            <th>Prénom</th>
                             <td> {{ $user->first_name }}</td>
                         </tr>
                         <tr>
-                            <th>Last Name</th>
+                            <th>Nom</th>
                             <td> {{ $user->last_name }}</td>
                         </tr>
                         <tr>
@@ -34,11 +34,11 @@
                             <td> {{ $user->email }}</td>
                         </tr>
                         <tr>
-                            <th>Phone</th>
+                            <th>Téléphone</th>
                             <td> {{ $user->phone }}</td>
                         </tr>
                         <tr>
-                            <th>Company Name</th>
+                            <th>Entreprise</th>
                             <td> {{ $user->company_name }}</td>
                         </tr>
 

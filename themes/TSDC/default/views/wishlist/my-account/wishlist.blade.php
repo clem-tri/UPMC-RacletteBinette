@@ -12,21 +12,21 @@
         </div>
         <div class="col-md-9">
             <div class="title">
-                <h4>My Wishlist</h4>
+                <h4>Ma liste de souhaits</h4>
             </div>
             @if(count($wishlists) <= 0)
-                <p>Sorry No Wishlists Found</p>
+                <p>Rien de trouvé dans la liste de souhaits.</p>
             @else
 
                 <div class="card">
                     <div class="card-header">
-                        My Wishlist
+                        Ma liste de souhaits
                     </div>
                     <div class="card-body">
                         <table class="table table-responsive">
                             <thead>
-                            <th>Product Title</th>
-                            <th>Product Image</th>
+                            <th>Nom du produit</th>
+                            <th>Image du produit</th>
                             <th>Action</th>
                             </thead>
                             <tbody>
@@ -51,8 +51,7 @@
                                     </td>
                                     <td>
                                         <a class="btn btn-danger"
-                                           href="{{ route('my-account.wishlist.remove', $wishlist->product->slug ) }}">Remove from
-                                            Wishlist</a>
+                                           href="{{ route('my-account.wishlist.remove', $wishlist->product->slug ) }}">Supprimer de la liste</a>
                                     </td>
                                 </tr>
                             @endforeach

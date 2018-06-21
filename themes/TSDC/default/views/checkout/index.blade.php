@@ -7,7 +7,7 @@
 @section('content')
 
     <div class="container">
-        <div class="h1">Checkout</div>
+        <div class="h1">Paiement</div>
 
         @if(is_null($cartItems))
             <p>Sorry No Product Found <a href="{{ route('home') }}">Start Shopping</a></p>

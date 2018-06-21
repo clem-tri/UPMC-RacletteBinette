@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('meta_title','Edit My Account E commerce')
+@section('meta_title','Modifier le profil - ')
 @section('meta_description','Edit My Account E commerce')
 
 
@@ -14,7 +14,7 @@
             <div class="col-9">
                 <div class="card">
                     <div class="card-header">
-                        Profile Edit
+                        Modifier le profil
                     </div>
                     <div class="card-body">
                         <div class="profile-content">
@@ -23,20 +23,20 @@
 
                                 @csrf
 
-                                @include('partials.forms.text',['name' => 'first_name','label' => 'First Name','model' => $user])
-                                @include('partials.forms.text',['name' => 'last_name','label' => 'Last Name','model' => $user])
+                                @include('partials.forms.text',['name' => 'first_name','label' => 'Prénom','model' => $user])
+                                @include('partials.forms.text',['name' => 'last_name','label' => 'Nom','model' => $user])
                                 @include('partials.forms.text',['name' => 'email','label' => 'Email','model' => $user,
                                                         'attributes' => ['disabled' => true,'class' => 'form-control']])
 
 
-                                @include('partials.forms.text',['name' => 'phone','label' => 'Phone','model' => $user])
-                                @include('partials.forms.text',['name' => 'company_name','label' => 'Company Name','model' => $user])
+                                @include('partials.forms.text',['name' => 'phone','label' => 'Téléphone','model' => $user])
+                                @include('partials.forms.text',['name' => 'company_name','label' => 'Entreprise','model' => $user])
 
 
 
 
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary"> Update Profile</button>
+                                    <button type="submit" class="btn btn-primary"> Mettre à jour</button>
 
                                 </div>
 

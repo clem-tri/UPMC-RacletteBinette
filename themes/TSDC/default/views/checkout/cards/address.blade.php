@@ -14,8 +14,8 @@
 
             @if(NULL === $address)
                 <div class="form-group">
-                    <label class="control-label" for="input-billing-address-1">Address 1</label>
-                    <input type="text" name="billing[address1]" value="" placeholder="Address 1"
+                    <label class="control-label" for="input-billing-address-1">Adresse 1</label>
+                    <input type="text" name="billing[address1]" value="" placeholder="Adresse 1"
                            id="input-billing-address-1"
                            @if($errors->has('billing.address1'))
                            class="is-invalid form-control"
@@ -31,8 +31,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="input-billing-address-2">Address 2</label>
-                    <input type="text" name="billing[address2]" value="" placeholder="Address 2"
+                    <label class="control-label" for="input-billing-address-2">Adresse 2</label>
+                    <input type="text" name="billing[address2]" value="" placeholder="Adresse 2"
                            id="input-billing-address-2"
 
                            @if($errors->has('billing.address2'))
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="country">Country</label>
+                    <label for="country">Pays</label>
                     <select name="billing[country_id]" data-name="country_id"
                             class="{{ $errors->has('billing.country_id') ? "is-invalid" : "" }}
                                     billing-country form-control billing tax-calculation"
@@ -68,7 +68,7 @@
                     @endif
                 </div>
 
-                <div class="row">
+                {{--<div class="row">
                     <div class="form-group col-6">
                         <label class="control-label" for="input-billing-zone">Region /
                             State</label>
@@ -88,13 +88,13 @@
                             </div>
                         @endif
 
-                    </div>
+                    </div>--}}
 
 
-                    <div class="form-group  col-6">
-                        <label class="control-label" for="input-billing-city">City</label>
+                    <div class="form-group ">
+                        <label class="control-label" for="input-billing-city">Ville</label>
                         <input type="text" data-name="city" name="billing[city]"
-                               placeholder="City"
+                               placeholder="Ville"
                                id="input-billing-city"
 
                                @if($errors->has('billing.city'))
@@ -112,9 +112,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="input-billing-postcode">Post Code</label>
+                    <label class="control-label" for="input-billing-postcode">Code postal</label>
                     <input type="text" data-name="postcode" name="billing[postcode]" value=""
-                           placeholder="Post Code"
+                           placeholder="Code postal"
                            id="input-billing-postcode"
 
                            @if($errors->has('billing.postcode'))
@@ -134,7 +134,7 @@
 
                 <div class="form-group  col-12">
                     <div class="card card-default">
-                        <div class="card-header">Billing Address</div>
+                        <div class="card-header">Adresse de facturation</div>
                         <div class="card-body">
 
                             <p>
@@ -161,8 +161,8 @@
                            onclick="if (this.checked == true){
                                                             jQuery('.different-shipping-form').css('display','block');
                                                             } else  { jQuery('.different-shipping-form').css('display','none'); }
-                                                        ">&nbsp;Use Different Address for Shipping
-                    Account</label>
+                                                        ">&nbsp;Utiliser une adresse différente pour la facturation
+                    </label>
             </div>
 
         </div>

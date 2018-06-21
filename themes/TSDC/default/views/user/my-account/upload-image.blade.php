@@ -12,14 +12,14 @@
 
             <div class="card">
                 <div class="card-header">
-                    Profile Image Upload
+                    Image de profil
                 </div>
                 <div class="card-body">
                     <form action="{{ route('my-account.upload-image.post') }}" method="post" enctype="multipart/form-data">
 
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <label for="profile_image">Profile Image</label>
+                            <label for="profile_image">Image de profil</label>
                             <input type="file"
                                    @if($errors->has('profile_image'))
                                    class="is-invalid form-control"
@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button class="btn btn-primary" type="submit">Upload Image</button>
+                            <button class="btn btn-primary" type="submit">Changer l'image</button>
                         </div>
                     </form>
 

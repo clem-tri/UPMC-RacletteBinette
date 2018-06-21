@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-header">
-        Your Personal Details
+        Vos détails personnels
     </div>
     <div class="card-body">
         @php
@@ -14,9 +14,9 @@
 
         <div class="row">
             <div class="form-group  col-6">
-                <label class="control-label" for="input-user-first-name">First Name</label>
+                <label class="control-label" for="input-user-first-name">Prénom</label>
                 <input type="text" name="billing[first_name]"
-                       value="{{ $firstName }}" placeholder="First Name"
+                       value="{{ $firstName }}" placeholder="Prénom"
                        id="input-user-first-name"
                        @if($errors->has('billing.first_name'))
                        class="is-invalid form-control"
@@ -33,9 +33,9 @@
             </div>
 
             <div class="form-group  col-6">
-                <label class="control-label" for="input-user-last-name">Last Name</label>
+                <label class="control-label" for="input-user-last-name">Nom</label>
                 <input type="text" name="billing[last_name]"
-                       value="{{ $lastName }}" placeholder="Last Name"
+                       value="{{ $lastName }}" placeholder="Nom"
                        id="input-user-last-name"
                        @if($errors->has('billing.last_name'))
                        class="is-invalid form-control"
@@ -87,8 +87,8 @@
                 <div class="row">
                     <div class="form-group  col-6">
                         <label class="control-label"
-                               for="input-billing-password">Password</label>
-                        <input type="password" name="user[password]" placeholder="Password"
+                               for="input-billing-password">Mot de passe</label>
+                        <input type="password" name="user[password]" placeholder="Mot de passe"
                                id="input-billing-password"
 
                                @if($errors->has('user.password'))
@@ -104,8 +104,7 @@
                         @endif
                     </div>
                     <div class="form-group  col-6">
-                        <label class="control-label" for="input-billing-confirm">Password
-                            Confirm</label>
+                        <label class="control-label" for="input-billing-confirm">Confirmer mot de passe</label>
                         <input type="password" name="user[confirm_password]"
                                placeholder="Password Confirm"
                                id="input-billing-confirm"
@@ -128,8 +127,8 @@
         @endif
 
         <div class="form-group">
-            <label class="control-label" for="input-billing-phone">Phone</label>
-            <input type="text" name="billing[phone]" value="{{ $phone }}" placeholder="Phone"
+            <label class="control-label" for="input-billing-phone">Téléphone</label>
+            <input type="text" name="billing[phone]" value="{{ $phone }}" placeholder="Téléphone"
                    id="input-billing-phone"
                    @if($errors->has('billing.phone'))
                    class="is-invalid form-control"

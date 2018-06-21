@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="h1">Cart Page</div>
+                <div class="h1">Panier</div>
 
                 @if($cartProducts !== null && $cartProducts->count() > 0)
 
@@ -46,7 +46,7 @@
                             <td class="col-1"> &nbsp;  </td>
                             <td class="col-1"><h6>Total</h6></td>
                             <td class="col-1 text-right"><h6>
-                                    <strong>${{ number_format((Cart::total()),2) }}</strong></h6></td>
+                                    <strong>€{{ number_format((Cart::total()),2) }}</strong></h6></td>
                         </tr>
 
                         @if(Cart::hasTax())
@@ -58,7 +58,7 @@
                             <td class="col-1"> &nbsp;  </td>
                             <td class="col-1"><h6>Tax Total</h6></td>
                             <td class="col-1 text-right"><h6>
-                                    <strong>${{ number_format((Cart::taxTotal()),2) }}</strong></h6></td>
+                                    <strong>€{{ number_format((Cart::taxTotal()),2) }}</strong></h6></td>
                         </tr>
                         @endif
                         <tr>
@@ -69,12 +69,12 @@
                             <td class="col-1">  </td>
                             <td class="col-1">
                                 <a href="{{ route('home') }}" class="btn btn-light">
-                                    <span class="fa fa-shopping-cart"></span> Continue Shopping
+                                    <span class="fa fa-shopping-cart"></span> Continuer les achats
                                 </a>
                             </td>
                             <td class="col-1 text-right">
                                 <a href="{{ route('checkout.index') }}" class="btn btn-success">
-                                    Checkout <span class="fa fa-play-circle"></span>
+                                    Valider le panier <span class="fa fa-play-circle"></span>
                                 </a>
                             </td>
                         </tr>
@@ -83,7 +83,7 @@
 
                 @else
 
-                    <p>There is no Product in Cart yet.</p>
+                    <p>Il n'y a pas de produit dans le panier.</p>
                 @endif
 
             </div>

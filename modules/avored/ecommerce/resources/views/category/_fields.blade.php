@@ -21,12 +21,12 @@
 </avored-form-input>
 
 
-<avored-form-select 
+<avored-form-select
     field-name="parent_id"
-    label="Parent Category" 
+    label="Parent Category"
     error-text="{!! $errors->first('parent_id') !!}"
     field-options='{!! $categoryOptions !!}'
-    field-value="{!! $model->parent_id ?? "" !!}" 
+    field-value="{!! $model->parent_id ?? "" !!}"
     v-on:change="changeModelValue"
         >
 </avored-form-select>

@@ -16,27 +16,33 @@
             @auth()
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Welcome {{ Auth::user()->full_name }} !
+                    <a class="nav-link" href="#">Bienvenue {{ Auth::user()->first_name }} !
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('my-account.home') }}">My Account
+                    <a class="nav-link" href="{{ route('my-account.home') }}">Mon compte
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
 
-
             @endauth
 
             @guest()
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="{{ route('login') }}">Se connecter </a>
             </li>
-            <li class="nav-item">
+            {{--<li class="nav-item">
                 <a class="nav-link" href="{{ route('register') }}">Créer un compte</a>
-            </li>
+            </li>--}}
             @endguest()
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ route('cart.view') }}">Panier </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ route('checkout.index') }}">Caisse</a>
+                </li>
 
         </ul>
     </div>

@@ -11,15 +11,15 @@
 
             <div class="col-9">
                 <div class="main-title-wrap mb-3">
-                    <span class="h1">Addresses</span>
+                    <span class="h1">Adresses</span>
 
                     <div class="float-right mr-3">
-                        <a class="btn btn-primary" href="{{ route('my-account.address.create')}}">Create Address</a>
+                        <a class="btn btn-primary" href="{{ route('my-account.address.create')}}">Ajouter une adresse</a>
                     </div>
 
                 </div>
                 @if(count($addresses) <= 0)
-                    <p>Sorry No Address Found</p>
+                    <p>Désolé, aucune adresse trouvée...</p>
                 @else
                     <div class="row">
                         @foreach($addresses as $address)
@@ -28,13 +28,13 @@
                                 <div class="card">
                                     <div class="card-header">
                                         @if($address->type == "SHIPPING")
-                                            <span>Shipping Address</span>
+                                            <span>Adresse de Livraison</span>
                                         @else
-                                            <span>Billing Address</span>
+                                            <span>Adresse de facturation</span>
                                         @endif
 
                                         <span class="float-right">
-                                            <a href="{{ route('my-account.address.edit', $address->id)}}">Edit</a>
+                                            <a href="{{ route('my-account.address.edit', $address->id)}}">Modifier</a>
                                         </span>
 
                                     </div>
@@ -42,36 +42,32 @@
                                         <table class="table table-responsive">
                                             <tbody>
                                             <tr>
-                                                <th>First Name</th>
+                                                <th>Prénom</th>
                                                 <td> {{ $address->first_name }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Last Name</th>
+                                                <th>Nom</th>
                                                 <td> {{ $address->last_name }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Address1</th>
+                                                <th>Adresse 1</th>
                                                 <td> {{ $address->address1}}</td>
                                             </tr>
                                             <tr>
-                                                <th>Address2</th>
+                                                <th>Adresse 2</th>
                                                 <td> {{ $address->address2}}</td>
                                             </tr>
 
                                             <tr>
-                                                <th>City</th>
+                                                <th>Ville</th>
                                                 <td> {{ $address->city}}</td>
                                             </tr>
                                             <tr>
-                                                <th>State</th>
-                                                <td> {{ $address->state}}</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Country</th>
+                                                <th>Pays</th>
                                                 <td> {{ $address->country->name}}</td>
                                             </tr>
                                             <tr>
-                                                <th>phone</th>
+                                                <th>Téléphone</th>
                                                 <td> {{ $address->phone }}</td>
                                             </tr>
 

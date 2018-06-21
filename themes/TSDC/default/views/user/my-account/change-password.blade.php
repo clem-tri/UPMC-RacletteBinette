@@ -13,7 +13,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    Change Password
+                    Changer le mot de passe
                 </div>
                 <div class="card-body">
 
@@ -21,7 +21,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group">
-                            <label>Current Password</label>
+                            <label>Mot de passe actuel</label>
                             <input type="password" name="current_password"
 
                                    @if($errors->has('current_password'))
@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label>New Password</label>
+                            <label>Nouveau mot de passe</label>
                             <input type="password" name="password"
                                     @if($errors->has('password'))
                                         class="is-invalid form-control"
@@ -54,7 +54,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Password Confirmation</label>
+                            <label>Confirmer le mot de passe</label>
                             <input type="password" name="password_confirmation"
                                    @if($errors->has('password_confirmation'))
                             class="is-invalid form-control"
@@ -70,7 +70,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button class="btn btn-primary" type="submit">Change My Password</button>
+                            <button class="btn btn-primary" type="submit">Changer mon mot de passe</button>
                         </div>
 
                     </form>

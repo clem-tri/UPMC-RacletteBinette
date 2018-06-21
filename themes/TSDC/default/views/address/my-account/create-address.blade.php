@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('meta_title','Create Address List Account E commerce')
-@section('meta_description','Create Address List Account E commerce')
+@section('meta_title','Créer adresse - Raclette et Binette')
+@section('meta_description','Créer adresse - Raclette et Binette')
 
 @section('content')
 
@@ -12,7 +12,7 @@
         <div class="col-md-9">
             <div class="card">
                 <div class="card-header">
-                    Create Address
+                    Créer adresse
                 </div>
                 <div class="card-body">
                     <form method="post" action="{{ route('my-account.address.store') }}">
@@ -21,30 +21,28 @@
 
                         <div class="row">
                             <div class="col-6">
-                                @include('partials.forms.text',['name' => 'first_name','label' => 'First Name'])
+                                @include('partials.forms.text',['name' => 'first_name','label' => 'Prénom'])
                             </div>
                             <div class="col-6">
-                                @include('partials.forms.text',['name' => 'last_name','label' => 'Last Name'])
+                                @include('partials.forms.text',['name' => 'last_name','label' => 'Nom'])
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                @include('partials.forms.text',['name' => 'address1','label' => 'Address1'])
+                                @include('partials.forms.text',['name' => 'address1','label' => 'Adresse 1'])
                             </div>
                             <div class="col-6">
-                                @include('partials.forms.text',['name' => 'address2','label' => 'Address2'])
+                                @include('partials.forms.text',['name' => 'address2','label' => 'Adresse 2'])
                             </div>
                         </div>
 
 
                         <div class="row">
                             <div class="col-6">
-                                @include('partials.forms.text',['name' => 'city','label' => 'City'])
+                                @include('partials.forms.text',['name' => 'city','label' => 'Ville'])
 
                             </div>
-                            <div class="col-6">
-                                @include('partials.forms.text',['name' => 'state','label' => 'State'])
-                            </div>
+
 
                         </div>
 
@@ -52,7 +50,7 @@
                             <div class="col-6">
                                 <div class="form-group">
 
-                                    <label for="country" class="control-label">Country</label>
+                                    <label for="country" class="control-label">Pays</label>
                                     <select name="country_id"
                                             @if($errors->has('country_id'))
                                             class="is-invalid form-control"
@@ -77,14 +75,14 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                @include('partials.forms.text',['name' => 'postcode','label' => 'Post Code'])
+                                @include('partials.forms.text',['name' => 'postcode','label' => 'Code postal'])
                             </div>
                         </div>
 
-                        @include('partials.forms.text',['name' => 'phone','label' => 'Phone'])
+                        @include('partials.forms.text',['name' => 'phone','label' => 'Numéro de téléphone'])
 
                         <div class="form-group">
-                            <label for="phone" class="control-label">Addresss Type</label>
+                            <label for="phone" class="control-label">Type d'adresse</label>
 
                             <select name="type"
                                     @if($errors->has('type'))
@@ -93,8 +91,8 @@
                                     class="form-control"
                                     @endif
                             >
-                                <option value="SHIPPING">Shipping</option>
-                                <option value="BILLING">Billing</option>
+                                <option value="SHIPPING">Livraison</option>
+                                <option value="BILLING">Facturation</option>
                             </select>
 
 
@@ -108,7 +106,7 @@
 
                         <div class="form-group">
                             <button class="btn btn-primary" type="submit" name="create_address" value="">
-                                Create Address
+                                Ajouter l'adresse
                             </button>
                         </div>
 
