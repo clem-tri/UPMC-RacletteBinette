@@ -15,6 +15,10 @@
     <link href="{{ asset('vendor/tsdc-default/css/app.css') }}" rel="stylesheet">
     @stack('styles')
     @yield('css')
+    @if(Request::is( Config::get('chatter.routes.home') ) || Request::is( Config::get('chatter.routes.home') . '/*' ))
+    <!-- LINK TO YOUR CUSTOM STYLESHEET -->
+      <link rel="stylesheet" href="{{ asset('vendor/tsdc-default/css/forums.css') }}" />
+    @endif
         <!-- Scripts -->
     <script>
         window.Laravel = <?php
