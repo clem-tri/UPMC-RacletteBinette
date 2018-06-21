@@ -1,3 +1,59 @@
+<header class="page-header">
+
+    <!-- Logo Raclette et Binette + Barre de recherche -->
+    <div class="row">
+        <div class="col-md-4"><img src="vendor/tsdc-default/images/racetbin.png" alt="Raclette et Binette" class="logorb"/></div>
+
+        <div class=" col-md-4">
+            <form action="" class="search-form">
+                <div class="form-group has-feedback">
+                    <label for="search" class="sr-only">Rechercher</label>
+                    <input style="color: #fff;" type="text" class="form-control" name="search" id="search" placeholder="Rechercher...">
+                    <span style="color: #fff;" class="glyphicon glyphicon-search form-control-feedback" ></span>
+                </div>
+            </form>
+        </div>
+
+        <!-- 4 Mini onglets -->
+        <div class="col-md-4">
+            <div class="grid-inner">
+                <ul class="headerLists">
+                    <li>
+                        <a class="headerListsItems">
+                            <img src="vendor/tsdc-default/images/icones/carte_fidelite.png" alt="Carte fidélité" />
+                            <p class="headerListsItems_p">Carte fidélité</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="headerListsItems">
+                            <img src="vendor/tsdc-default/images/icones/moncompte.png" alt="Compte utilisateur" />
+                            <p class="headerListsItems_p">Mon compte</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="headerListsItems">
+                            <img src="vendor/tsdc-default/images/icones/panier.png" alt="Carte fidélité" />
+                            <p class="headerListsItems_p">Mon panier</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="headerListsItems">
+                            <img src="vendor/tsdc-default/images/icones/contact.png" alt="Carte fidélité" />
+                            <p class="headerListsItems_p">Nous contacter</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
     <div class="container">
         <ul class="navbar-nav mr-auto">
