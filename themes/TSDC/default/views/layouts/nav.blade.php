@@ -53,11 +53,67 @@
 
 </header>
 
+<!-- Menu -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0; border-radius: 0px;">
+    <div class="container" style="margin:0;">
+        <ul class="navbar-nav mr-auto">
+            {{-- <li class="nav-item">
+                 <a class="nav-link" href="https://github.com/avored/laravel-ecommerce"><i class="fab fa-github"></i> GitHub</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="https://www.facebook.com/avoredecommerce/"><i class="fab fa-facebook"></i> Facebook</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
+             </li>--}}
+        </ul>
+        <ul class="navbar-nav">
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
+            @guest()
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accueil<div class="border_menu">|</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plante d'extérieur<div class="border_menu">|</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Arbre, Arbuste & Conifère<div class="border_menu">|</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Potager, Verger<div class="border_menu">|</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Outil, Entretien & Soin<div class="border_menu">|</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terreau, Engrais et Paillage<div class="border_menu">|</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Forum<div class="border_menu">|</div>
+                    </a>
+                </li>
+            @endguest()
+
+
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+{{--<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
     <div class="container">
         <ul class="navbar-nav mr-auto">
-           {{-- <li class="nav-item">
+           --}}{{-- <li class="nav-item">
                 <a class="nav-link" href="https://github.com/avored/laravel-ecommerce"><i class="fab fa-github"></i> GitHub</a>
             </li>
             <li class="nav-item">
@@ -65,7 +121,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
-            </li>--}}
+            </li>--}}{{--
         </ul>
         <ul class="navbar-nav">
 
@@ -96,9 +152,11 @@
 
         </ul>
     </div>
-</nav>
+</nav>--}}
 
-<header style="padding: 40px 0;">
+<!-- Top menu -->
+
+{{--<header style="padding: 40px 0;">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -125,7 +183,7 @@
             </div>-->
         </div>
     </div>
-</header>
+</header>--}}
    
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">

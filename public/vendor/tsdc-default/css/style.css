@@ -103,40 +103,20 @@ li {
 
 /* Menu de navigation (Navbar) */
 
-.nav li {
-    color:white;
-}
-
-.container-nav {
-    margin:0;
-    padding:0;
-}
-
-.navbar-header a {
-    color:white !important;
-}
-
-.navbar-nav li {
-    color:white !important;
-    text-shadow:none !important;
-}
-
 .navbar-brand, .navbar-nav>li>a {
     text-shadow:none !important;
     color:white !important;
+    font-size:10pt;
+    text-align:left;
 }
 
-.container-fluid {
-    height:50px !important;
-}
 
 .border_menu {
-    border-right:1px solid white;
-    height:50px;
+    color:white;
+    font-size:11pt;
     display:inline;
     padding-left:20px;
 }
-
 
 
 /* Fil d'ariane */
@@ -144,10 +124,6 @@ li {
 .ariane {
     margin-left:35px;
 }
-
-
-
-
 
 /* Footer */
 footer {
@@ -159,20 +135,21 @@ footer {
     right: 0;
     margin-top:100px;
 }
+
 .footer_txt {
-    margin-top:30px;
+    font-size:10pt;
+    margin-top:40px;
     border-top:1px solid white;
 }
-.footer_txt p {
-    text-align:center;
-    cursor:pointer;	margin-top:20px;
-    color:white;
-}
-.footer_txt a {
-    color:white;padding-left:20px;
-    padding-right:20px;
-}
-
+    .footer_txt p {
+        text-align:center;
+        cursor:pointer;	margin-top:20px;
+        color:white;
+    }
+    .footer_txt a {
+        color:white;padding-left:20px;
+        padding-right:20px;
+    }
 
 
 .rectangle_white {
@@ -191,7 +168,6 @@ footer {
     padding-top:7px;
 
 }
-
 
 
 .rectangle_transparent {
@@ -216,10 +192,9 @@ footer {
 }
 
 .paiementListItem_text {
-    font-size:9pt;
+    font-size:8pt;
     display:inline;
 }
-
 
 /* Bloc Service client */
 
@@ -230,7 +205,7 @@ footer {
 }
 
 .serviceclient_text {
-    font-size:9pt;
+    font-size:8pt;
     padding-left:15px;
     padding-top:10px;
     padding-right:5px;
@@ -245,7 +220,7 @@ footer {
 }
 
 .servicelivraison_text {
-    font-size:9pt;
+    font-size:8pt;
     padding-left:15px;
     padding-top:15px;
     padding-right:5px;
@@ -253,7 +228,7 @@ footer {
 
 /* Bloc Suivez-nous */
 
-#align_image{
+.align_image{
     margin: 1em 10px 0px 0px;
     padding-top: 0px;
     padding-right: 10px;
@@ -262,8 +237,16 @@ footer {
     display: inline;
 }
 
-#align_image li {
+.align_image li {
     margin: 0px;
     display: inline;
     padding-left:15px;
+}
+
+.align_image li>a {
+    text-decoration: none;
+}
+
+.navbar-nav {
+    border-radius:0px;
 }
