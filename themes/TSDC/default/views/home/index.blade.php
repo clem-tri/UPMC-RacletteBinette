@@ -12,15 +12,15 @@
 
 @section('content')
         <div class="row" style="width:100%;">
-            <div class="col-md-12 col-centered produitEnUne" style="min-height:450px; width:100%;">
+            <div class="col-md-10 col-centered produitEnUne col-md-offset-2" style="min-height:450px; width:100%;">
             </div>
         </div>
 
 
-        <div class="row">
-            <div class="col-md-6 col-centered produitSousUne"  style="min-height:450px;">
+        <div class="row" style="width:100%;">
+            <div class="col-md-6 col-centered produitSousUne col-md-offset-2"  style="min-height:450px;">
             </div>
-            <div class="col-lg-6 col-centered forumImage"  style="min-height:450px;">
+            <div class="col-md-3 col-centered forumImage col-md-offset-2"  style="min-height:450px;">
             </div>
         </div>
 @endsection
