@@ -50,7 +50,7 @@
             <div class="col-md-6">
                 <a class="navbar-brand" href="{{ route('home') }}">
                     <span style="font-size: 32px; font-weight: 500; margin-top: 10px;">
-                        <img src="{{ asset('vendor/tsdc-default/images/logo.svg') }}" alt="logo" class="logo">Chez Raclette et Binette
+                        <img src="{{ asset('vendor/tsdc-default/images/logo_raclette_et_binette.png') }}" alt="logo" class="logo">Chez Raclette et Binette
                     </span>
                 </a>
             </div>

@@ -1,5 +1,69 @@
+@font-face {
+ font-family: "BIG_JOHN";
+ src: url("../fonts/BIG_JOHN.otf") format('truetype');
+}
+@font-face {
+ font-family: "Slim_Joe";
+ src: url("../fonts/Slim_Joe.otf") format('truetype');
+}
+
+#chatter #forum_titre{
+  font-family: 'BIG_JOHN' !important;
+  font-style: bold;
+  font-size: 30px;
+}
+#chatter #forum_sous_titre{
+  font-family: 'Slim_Joe';
+    font-size: 20pt;
+    color: #fff !important ;
+}
+/*#chatter #forum_sous_titre{
+  font-family: 'BIG_JOHN';
+    font-size: 15pt;
+    color: #fff !important;
+}*/
+
+#pagination2 {
+  font-size: 18px;
+  background-color: #68b42f;
+  border-radius: 50px;
+  width: 100px;
+  height: 50px;
+  padding-left: 15px;
+  padding-top: 7px;
+}
+#pagination .pagination > .active > span {
+  background: none;
+  color: #68b42f;
+  font-weight: bold;
+  border: 0px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+#pagination .pagination > .disabled > span {
+  border: 0px;
+  color: #fff;
+  background-color: #68b42f;
+}
+#pagination .pagination > li > a,
+#pagination .pagination > li > span {
+  border: 0px;
+  padding: 6px 5px;
+  color: #fff;
+  background-color: #68b42f;
+  border-radius: 50px;
+}
+#pagination .pagination > li > a:focus,
+#pagination .pagination > li > a:hover,
+#pagination .pagination > li > span:focus,
+#pagination .pagination > li > span:hover {
+  background: #fff !important ;
+  color: #68b42f;
+  font-weight: bold;
+}
+
 #chatter #chatter_hero {
-  background-image: url('../images/1069.jpg');
+  background-image: url('../images/lal-science-faculte-gestion-forestiere-changements-climatiques.jpg');
   width: 100%;
   min-height: 200px;
   position: relative;
@@ -11,4 +75,20 @@
   max-height: 100px;
   margin: 45px auto;
   position: relative;
+}
+#chatter ul.discussions li a.discussion_list .chatter_right .chatter_count,
+#chatter ul.discussions li .chatter_posts .chatter_right .chatter_count {
+  padding: 8px 20px;
+  border-radius: 3px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #e52620;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  font-family: Arial, Helvetica, Times, Courier;
+}
+#chatter button.btn.btn-primary {
+  border: 2px solid #68b42f;
+  background-color: #68b42f;
+  color: #fff;
 }
