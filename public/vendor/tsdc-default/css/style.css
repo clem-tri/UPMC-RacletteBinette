@@ -1,5 +1,5 @@
 body {
-    overflow-x:hidden;
+    overflow-x: hidden;
     margin:0;
     padding:0;
     font-family: 'Comfortaa', cursive;
@@ -56,6 +56,23 @@ body {
     width: 100%;
     display:block;
 }
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    width:100%;
+}
+    .produitEnUne {
+        background:url("../images/produitUne.png") no-repeat;
+    }
+
+    .produitSousUne {
+        background:url("../images/produitSousUne.png") no-repeat;
+    }
+
+    .forumImage {
+        background:url("../images/forumImage.png") no-repeat;
+    }
 
 
 .search-form .form-group span.form-control-feedback {

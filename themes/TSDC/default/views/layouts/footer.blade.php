@@ -54,6 +54,7 @@
 </style>
 
 <footer class="row">
+    <div class="col-12 col-md-12">
     <div class="container-fluid bg-dark">
 
         <div class="col-12 col-md-3">
@@ -155,5 +156,6 @@
                 </p>
             </div>
         </div>
+    </div>
     </div>
 </footer>

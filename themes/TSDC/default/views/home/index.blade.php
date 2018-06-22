@@ -11,20 +11,16 @@
 @section('meta_description',$metaDescription)
 
 @section('content')
-    <div class="container">
-        <div class="row">
-
-        </div>
-        <div class="row">
-            <div class="col-12" style="min-height: 450px">
-
-                @if($pageModel !== null)
-                    {!! $pageModel->content !!}
-                @else
-                    <div class="h1">AvoRed E commerce</div>
-                    <h6>Home Page</h6>
-                @endif
+        <div class="row" style="width:100%;">
+            <div class="col-md-12 col-centered produitEnUne" style="min-height:450px; width:100%;">
             </div>
         </div>
-    </div>
+
+
+        <div class="row">
+            <div class="col-md-6 col-centered produitSousUne"  style="min-height:450px;">
+            </div>
+            <div class="col-lg-6 col-centered forumImage"  style="min-height:450px;">
+            </div>
+        </div>
 @endsection

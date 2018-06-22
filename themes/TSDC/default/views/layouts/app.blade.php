@@ -38,7 +38,7 @@
 @include("layouts.nav")
 <div class="container top-buffer  bottom-buffer">
 
-    <div class="row">
+    <div class="row" >
         <div class="col-12">
 
             @if(session()->has('errorNotificationText'))
