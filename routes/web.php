@@ -56,6 +56,8 @@ Route::middleware('auth')
         Route::post('upload-image', 'User\MyAccountController@uploadImagePost')->name('upload-image.post');
         Route::get('change-password', 'User\MyAccountController@changePassword')->name('change-password');
         Route::post('change-password', 'User\MyAccountController@changePasswordPost')->name('change-password.post');
+        Route::get('download-personnal-infos', "User\MyAccountController@downloadInfos")->name('download-personnal-infos');
+        Route::get('download-personnal-file-infos', "User\MyAccountController@downloadFileInfos")->name('download-personnal-file-infos');
 
         Route::resource('address', 'User\AddressController');
 

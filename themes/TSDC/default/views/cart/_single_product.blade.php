@@ -21,7 +21,7 @@
                         </a>
                     </h4>
 
-                    <p>Status: <span class="text-success"><strong>In Stock</strong></span>
+                    <p>Status: <span class="text-success"><strong>En Stock</strong></span>
                     </p>
 
                     <?php $attributeText = ""; ?>
@@ -35,7 +35,7 @@
                             @endif
                         @endforeach
                     @endif
-                    <p>Attributes: <span
+                    <p>Attributs: <span
                                 class="text-success"><strong>{{ $attributeText}}</strong></span>
                     </p>
 
@@ -67,7 +67,7 @@
             <div class="btn-group">
                 <a class="btn btn-warning" href="#"
                    onclick="jQuery('#cart-form-update').submit()">
-                    Update
+                    Mettre à jour
                 </a>
                 <button type="button"
                         class="btn dropdown-toggle"
@@ -78,7 +78,7 @@
                 <ul class="dropdown-menu">
                     <li>
                         <a class="btn" href="{{ route('cart.destroy', $product->slug())}}">
-                            Remove
+                            Supprimer
                         </a>
                     </li>
                 </ul>

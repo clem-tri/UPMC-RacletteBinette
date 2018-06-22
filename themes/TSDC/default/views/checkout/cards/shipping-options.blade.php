@@ -1,9 +1,9 @@
 <div class="card mb-3">
     <div class="card-header">
-        Shipping Option
+        Méthode de livraison
     </div>
     <div class="card-body shipping-option">
-        <p>Please select the preferred shipping method to use on this order.</p>
+        <p>Veuillez sélectionner votre méthode de livraison pour cette commande.</p>
 
         @foreach($shippingOptions as $shippingOption)
 
@@ -29,7 +29,7 @@
                         @if(null === $shippingOption->amount())
                             {{ $shippingOption->name() }}
                         @else
-                            {{ $shippingOption->name() . " $" . number_format($shippingOption->amount(),2) }}
+                            {{ $shippingOption->name() . " €" . number_format($shippingOption->amount(),2) }}
                         @endif
 
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\User;
 use AvoRed\Ecommerce\Http\Requests\ChangePasswordRequest;
 use App\Http\Requests\UploadUserImageRequest;
 use App\Http\Requests\UserProfileRequest;
+use AvoRed\Ecommerce\Models\Database\Address;
+use AvoRed\Ecommerce\Models\Database\Country;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use AvoRed\Framework\Image\Facade as Image;
@@ -109,5 +111,51 @@ class MyAccountController extends Controller
         } else {
             return redirect()->back()->withErrors(['current_password' => 'Your Current Password Wrong!']);
         }
+    }
+
+    public function downloadInfos(){
+        return view('user.my-account.download-infos');
+    }
+
+    public function downloadFileInfos(){
+
+        $user = Auth::user();
+        $addresses = Address::whereUserId($user->id)->get();
+        $filename= $user->first_name.$user->last_name."_data.html";
+        $handle = fopen($filename, "w");
+        fwrite($handle,"<h1>Vos données personnelles</h1>");
+        fwrite($handle,"<h3>Coordonnées</h3>");
+
+        fwrite($handle, "<div>Prénom : $user->first_name</div>" );
+        fwrite($handle, "<div>Nom : $user->last_name</div>" );
+        fwrite($handle, "<div>Email : $user->email</div>" );
+        fwrite($handle, "<div>Entreprise : $user->company_name</div>" );
+        fwrite($handle, "<div>Téléphone : $user->phone</div>" );
+        fwrite($handle, "<div>Compte créé le : $user->created_at</div>" );
+
+        fwrite($handle,"<h3>Adresses</h3>");
+        foreach($addresses as $address){
+
+            $pays = Country::find($address->country_id);
+            fwrite($handle, "<div>Adresse 1 : $address->address1</div>" );
+            fwrite($handle, "<div>Adresse 2 : $address->address2</div>" );
+            fwrite($handle, "<div>Code postal : $address->postcode</div>" );
+            fwrite($handle, "<div>Ville : $address->city</div>" );
+            fwrite($handle, "<div>Pays : $pays->name</div>" );
+            fwrite($handle, "<div>Télép : $pays->name</div>" );
+        }
+
+
+        fclose($handle);
+
+        header('Content-Type: application/force-download');
+        header('Content-Disposition: attachment; filename='.basename($filename));
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($filename));
+        readfile($filename);
+        unlink($filename);
+        exit;
     }
 }

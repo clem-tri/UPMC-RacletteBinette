@@ -42,6 +42,10 @@
 
                 Se déconnecter </a>
 
+            <a href="{{ route('my-account.download-personnal-infos') }}" class="list-group-item list-group-item-action">
+
+                Récupérer mes informations </a>
+
 
         </ul>
     </div>

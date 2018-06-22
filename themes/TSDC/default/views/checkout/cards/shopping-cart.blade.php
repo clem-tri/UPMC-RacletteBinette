@@ -1,5 +1,5 @@
 <div class="card mb-3">
-    <div class="card-header">Shopping Cart</div>
+    <div class="card-header">Panier</div>
     <div class="card-body">
         <div class="table-responsive">
         <table id="cart_table" class="table table-bordered table-hover ">
@@ -34,7 +34,7 @@
                                 <?php $attributeText .= $attribute['variation_display_text'] . ": "; ?>
                             @endif
                         @endforeach
-                         <p>Attributes: <span
+                         <p>Attributs: <span
                                 class="text-success"><strong>{{ $attributeText}}</strong></span>
                     @endif
 
@@ -42,9 +42,9 @@
 
                     <td class="text-right hidden-xs">{{ $cartItem->qty() }}</td>
                     <td class="text-right hidden-xs">
-                        ${{ $cartItem->priceFormat()  }}</td>
+                       €{{ $cartItem->priceFormat()  }}</td>
                     <td class="text-right">
-                        ${{ $cartItem->finalPrice()  }}</td>
+                        €{{ $cartItem->finalPrice()  }}</td>
                 </tr>
 
                 @php
@@ -56,21 +56,21 @@
             </tbody>
             <tfoot>
             <tr>
-                <td colspan="3" class="text-right  hidden-xs"><strong>Sub-Total:</strong></td>
+                <td colspan="3" class="text-right  hidden-xs"><strong>Sous-Total:</strong></td>
                 <td class="text-right sub-total" data-sub-total="{{ number_format((float)$subTotal, 2, '.', '') }}">
-                    ${{ number_format((float)$subTotal, 2, '.', '') }}</td>
+                    €{{ number_format((float)$subTotal, 2, '.', '') }}</td>
             </tr>
             <tr class="hidden shipping-row">
                 <td colspan="3" class="text-right shipping-title  hidden-xs"
-                    style="font-weight: bold;">Shipping Option
+                    style="font-weight: bold;">Option de livraison
                 </td>
-                <td class="text-right shipping-cost" data-shipping-cost="0.00">$</td>
+                <td class="text-right shipping-cost" data-shipping-cost="0.00">€</td>
             </tr>
 
             <tr>
                 <td colspan="3" class="text-right  hidden-xs"><strong>Total:</strong></td>
                 <td class="text-right total" data-total="{{ number_format((float)$subTotal, 2, '.', '') }}">
-                    ${{ number_format((float)$subTotal, 2, '.', '') }}</td>
+                   €{{ number_format((float)$subTotal, 2, '.', '') }}</td>
             </tr>
             </tfoot>
 

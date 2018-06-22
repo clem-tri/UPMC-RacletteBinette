@@ -1,5 +1,5 @@
 <div class="card mt-3">
-    <div class="card-header">Your Address</div>
+    <div class="card-header">Adresse</div>
 
     <div class="card-body">
 

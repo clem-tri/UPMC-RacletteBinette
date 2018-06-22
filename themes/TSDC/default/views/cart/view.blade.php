@@ -15,16 +15,16 @@
                     <table class="table table-responsive">
                         <tr>
                             @if(Cart::hasTax())
-                                <th class="col-7">Product</th>
+                                <th class="col-7">Produit</th>
                             @else
-                                <th class="col-8">Product</th>
+                                <th class="col-8">Produit</th>
                             @endif
-                            <th class="col-1" style="text-align: center">Quantity</th>
-                            <th class="col-1 text-center">Price</th>
+                            <th class="col-1" style="text-align: center">Quantité</th>
+                            <th class="col-1 text-center">Prix</th>
                             @if(Cart::hasTax())
-                                <th class="col-1 text-center">Tax</th>
+                                <th class="col-1 text-center">Taxe</th>
                             @endif
-                            <th class="col-1 text-center">Line Total</th>
+                            <th class="col-1 text-center">Sous-total</th>
                             <th class="col-1"> </th>
                         </tr>
                         <?php $total = 0; $taxTotal = 0;$giftCouponAmount = 0; ?>

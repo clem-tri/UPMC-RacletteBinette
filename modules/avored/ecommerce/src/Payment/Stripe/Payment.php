@@ -2,6 +2,7 @@
 
 namespace AvoRed\Ecommerce\Payment\Stripe;
 
+use AvoRed\Framework\Cart\Product;
 use Stripe\Charge;
 use Stripe\Stripe;
 use AvoRed\Framework\Models\Database\Configuration;
@@ -79,9 +80,10 @@ class Payment extends PaymentEcommerce implements PaymentContracts
         $subTotal = 0;
         $taxTotal = 0;
 
+        /** @var Product $product */
         foreach ($cartProducts as $product) {
-            $subTotal += $product['price'] * $product['qty'];
-            $taxTotal += $product['tax_amount'] * $product['qty'];
+            $subTotal += $product->price() * $product->qty();
+            $taxTotal += $product->tax() * $product->qty();
         }
 
         $total = (round($subTotal, 2) + round($taxTotal, 2)) * 100;

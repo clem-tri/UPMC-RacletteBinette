@@ -10,7 +10,7 @@
         <div class="h1">Paiement</div>
 
         @if(is_null($cartItems))
-            <p>Sorry No Product Found <a href="{{ route('home') }}">Start Shopping</a></p>
+            <p>Aucun produit trouvé <a href="{{ route('home') }}">Commencer vos achats</a></p>
         @else
 
             <form id="place-order-form" method="post" action="{{ route('order.place') }}">
@@ -48,10 +48,10 @@
                                            class="form-check-input{{  $errors->has('agree') ? " is-invalid" : "" }}"
                                            name="agree" value="1"/>
                                     <label for="agree" class="form-check-label">
-                                        I have read and agree to the
+                                       J'ai lu et accepté les
                                         <a href="{{ $termConditionPageUrl }}" target="_blank"
                                            class="{{  $errors->has('agree') ? " text-danger" : "" }}  agree">
-                                            <b>Terms &amp; Conditions</b>
+                                            <b>Conditions d'utilisations</b>
                                         </a>
                                     </label>
 
@@ -69,7 +69,7 @@
                                     <input type="button" class="btn btn-primary"
                                            data-loading-text="Loading..."
                                            id="place-order-button"
-                                           value="PlaceOrder">
+                                           value="Valider">
 
 
                                 </div>
@@ -97,7 +97,7 @@
                 var total = parseFloat(subTotal + taxAmount + shippingCost).toFixed(2);
 
                 jQuery('.total').attr('data-total', total);
-                jQuery('.total').html("$" + total);
+                jQuery('.total').html("€" + total);
 
 
             }
@@ -133,7 +133,7 @@
                     jQuery('.shipping-row').removeClass('hidden');
 
                     jQuery('.shipping-row .shipping-title').html(shippingTitle + ":");
-                    jQuery('.shipping-row .shipping-cost').html("$" + shippingCost);
+                    jQuery('.shipping-row .shipping-cost').html("€" + shippingCost);
                     jQuery('.shipping-row .shipping-cost').attr('data-shipping-cost', shippingCost);
 
 
