@@ -1,0 +1,10 @@
+#chatter #chatter_hero {
+  background-image: url('../images/1069.jpg');
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  border: red 5px solid ;
+}

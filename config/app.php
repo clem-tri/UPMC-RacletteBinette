@@ -67,7 +67,7 @@ return [
       | to any of the locales which will be supported by the application.
       |
      */
-    'locale' => 'en',
+    'locale' => 'fr',
     /*
       |--------------------------------------------------------------------------
       | Application Fallback Locale
@@ -166,6 +166,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        DevDojo\Chatter\ChatterServiceProvider::class,
     ],
     /*
       |--------------------------------------------------------------------------

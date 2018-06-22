@@ -14,7 +14,12 @@
 
     <link href="{{ asset('vendor/tsdc-default/css/app.css') }}" rel="stylesheet">
     @stack('styles')
-    <!-- Scripts -->
+    @yield('css')
+    @if(Request::is( Config::get('chatter.routes.home') ) || Request::is( Config::get('chatter.routes.home') . '/*' ))
+    <!-- LINK TO YOUR CUSTOM STYLESHEET -->
+      <link rel="stylesheet" href="{{ asset('vendor/tsdc-default/css/forums.css') }}" />
+    @endif
+        <!-- Scripts -->
     <script>
         window.Laravel = <?php
         echo json_encode([
@@ -22,7 +27,7 @@
         ]);
         ?>
     </script>
-   
+
 </head>
 <body>
 <script src="{{ asset('/vendor/tsdc-default/js/app.js') }}"></script>
@@ -59,5 +64,6 @@
 
 @include('layouts.footer')
 @stack('scripts')
+@yield('js')
 </body>
 </html>
