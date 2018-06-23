@@ -33,7 +33,7 @@
     </script>
    
 </head>
-<body>
+<body style="background-color: white">
 <script src="{{ asset('/vendor/tsdc-default/js/app.js') }}"></script>
 @include("layouts.nav")
 <div class="top-buffer  bottom-buffer">

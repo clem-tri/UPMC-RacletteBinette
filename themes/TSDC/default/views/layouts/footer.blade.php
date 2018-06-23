@@ -57,7 +57,7 @@
     <div class="col-12 col-md-12">
     <div class="container-fluid bg-dark">
 
-        <div class="col-12 col-md-3">
+        <div class="col-md-3">
             <h4>Moyen de paiement</h4>
             <div class="rectangle_white">
                 <ul>
@@ -94,7 +94,7 @@
 
 
 
-        <div class="col-12 col-md-3">
+        <div class="col-md-3">
             <h4>Service client</h4>
             <div class="rectangle_white">
                 <img class="serviceClient_image" src="vendor/tsdc-default/images/icones/sc.png" alt="Service client" />
@@ -103,7 +103,7 @@
         </div>
 
 
-        <div class="col-12 col-md-3">
+        <div class="col-md-3">
             <h4>Livraison</h4>
             <div class="rectangle_white">
                 <img class="serviceLivraison_image" src="vendor/tsdc-default/images/icones/livraison.png" alt="Livraison" />
@@ -112,7 +112,7 @@
         </div>
 
 
-        <div class="col-12 col-md-3">
+        <div class="col-md-3">
             <h4 class="transparent_text">Undefined</h4>
             <div class="rectangle_transparent">
                 <ul class="align_image">

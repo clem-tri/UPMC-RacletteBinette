@@ -184,8 +184,9 @@
         </div>
     </div>
 </header>--}}
-   
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+
+
+{{--<nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container">
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#avored-navbar">
@@ -198,4 +199,4 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav>--}}

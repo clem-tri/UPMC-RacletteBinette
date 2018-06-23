@@ -5,6 +5,18 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+@font-face {
+    font-family: "Big John";
+    font-style: bold;
+    src: url('fonts/BIG-JOHN.otf');
+}
+
+@font-face {
+    font-family: "Slim Joe" !important;
+    font-style: bold;
+    src: url('fonts/Slim-Joe.otf');
+}
+
 
 /* Haut de page "Header" */
 
@@ -68,12 +80,24 @@ body {
 
     .produitSousUne {
         background:url("../images/produitSousUne.png") no-repeat;
+        background-size: cover;
     }
 
     .forumImage {
         background:url("../images/forumImage.png") no-repeat;
     }
 
+    .produit1 {
+        background:url("../images/MiniProduitUne1.png") no-repeat;
+    }
+
+    .produit2 {
+        background:url("../images/MiniProduitUne2.png") no-repeat;
+    }
+
+    .produit3 {
+        background:url("../images/MiniProduitUne3.png") no-repeat;
+    }
 
 .search-form .form-group span.form-control-feedback {
     position: absolute;
@@ -160,12 +184,14 @@ footer {
 }
     .footer_txt p {
         text-align:center;
-        cursor:pointer;	margin-top:20px;
+        cursor:pointer;
+        margin-top:20px;
         color:white;
     }
     .footer_txt a {
-        color:white;padding-left:20px;
-        padding-right:20px;
+        color:white;
+        padding-right:10px;
+        padding-left:10px;
     }
 
 
@@ -183,7 +209,6 @@ footer {
 .rectangle_white li {
     padding-left:15px;
     padding-top:7px;
-
 }
 
 
@@ -257,7 +282,7 @@ footer {
 .align_image li {
     margin: 0px;
     display: inline;
-    padding-left:15px;
+    padding-left:5px;
 }
 
 .align_image li>a {
