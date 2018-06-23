@@ -26,6 +26,8 @@ Route::get('cart/destroy/{id}', 'CartController@destroy')->name('cart.destroy');
 
 Route::get('checkout', 'CheckoutController@index')->name('checkout.index');
 
+Route::get('calendar', 'CalendarController@index')->name('calendar.index');
+
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login')->name('login.post');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');

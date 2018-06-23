@@ -1,15 +1,18 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
     <div class="container">
         <ul class="navbar-nav mr-auto">
-           {{-- <li class="nav-item">
-                <a class="nav-link" href="https://github.com/avored/laravel-ecommerce"><i class="fab fa-github"></i> GitHub</a>
+           <li class="nav-item">
+                <a class="nav-link" href="{{ route('chatter.home') }}">Forum</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/avoredecommerce/"><i class="fab fa-facebook"></i> Facebook</a>
+                <a class="nav-link" href="{{ route('calendar.index') }}">Calendrier</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
-            </li>--}}
+            {{--   <li class="nav-item">
+                  <a class="nav-link" href="https://www.facebook.com/avoredecommerce/"><i class="fab fa-facebook"></i> Facebook</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>--}}
         </ul>
         <ul class="navbar-nav">
 

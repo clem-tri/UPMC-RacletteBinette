@@ -93,7 +93,6 @@ class ProductController extends Controller
      */
     public function edit(ProductModel $product)
     {
-
         $attributes = Collection::make([]);
 
         $properties = Property::all()->pluck('name', 'id');
