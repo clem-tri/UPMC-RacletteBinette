@@ -321,3 +321,22 @@ footer {
 .navbar-nav {
     border-radius:0px;
 }
+
+/* Login & Register */
+
+.card {
+    background-color:#68B42F;
+    border-radius:10px;
+}
+
+.card-body {
+    background-color: #68B42F;
+    border-radius: 10px;
+}
+
+.title_auth {
+    text-align:center;
+    color:white;
+    font-family: "Big John";
+    font-size:12pt;
+}

@@ -8,8 +8,8 @@
     <div class="row mt-4 mb-4 justify-content-center">
         <div class="col-6">
             <div class="card">
-                <div class="card-header"><span>Se connecter</span></div>
                 <div class="card-body">
+                    <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p>Se connecter</p></span></div>
                     <div class="col-12">
                         <form method="POST"
                               action="{{ route('login.post') }}">

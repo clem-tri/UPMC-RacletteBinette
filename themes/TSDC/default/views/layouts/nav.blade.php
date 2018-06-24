@@ -110,10 +110,10 @@
 
 
 
-{{--<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
     <div class="container">
         <ul class="navbar-nav mr-auto">
-           --}}{{-- <li class="nav-item">
+           {{-- <li class="nav-item">
                 <a class="nav-link" href="https://github.com/avored/laravel-ecommerce"><i class="fab fa-github"></i> GitHub</a>
             </li>
             <li class="nav-item">
@@ -121,7 +121,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
-            </li>--}}{{--
+            </li>--}}
         </ul>
         <ul class="navbar-nav">
 
@@ -152,7 +152,7 @@
 
         </ul>
     </div>
-</nav>--}}
+</nav>
 
 <!-- Top menu -->
 
