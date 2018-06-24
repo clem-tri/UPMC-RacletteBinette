@@ -8,13 +8,13 @@ body {
 @font-face {
     font-family: "Big John";
     font-style: bold;
-    src: url('fonts/BIG-JOHN.otf');
+    src: url('../fonts/BIG-JOHN.otf');
 }
 
 @font-face {
     font-family: "Slim Joe" !important;
     font-style: bold;
-    src: url('fonts/Slim-Joe.otf');
+    src: url('../fonts/Slim-Joe.otf');
 }
 
 
@@ -69,6 +69,33 @@ body {
     display:block;
 }
 
+/* Boutons */
+
+.pager li>a {
+    background-color: #68B42F;
+    color:white;
+    width:100px;
+}
+
+.pager li>a:hover {
+    background-color: #68B42F;
+    opacity:0.9;
+}
+
+.circle{
+    float:right;
+    width:100px;
+    background-color: #68B42F;
+    height:100px;
+    margin-top:-20px;
+    margin-right:-35px;
+    text-align:center;
+    color:white;
+    border-radius:100px;
+}
+
+/* ----------- */
+
 .col-centered{
     float: none;
     margin: 0 auto;
@@ -89,14 +116,17 @@ body {
 
     .produit1 {
         background:url("../images/MiniProduitUne1.png") no-repeat;
+        background-size: cover;
     }
 
     .produit2 {
         background:url("../images/MiniProduitUne2.png") no-repeat;
+        background-size:cover;
     }
 
     .produit3 {
         background:url("../images/MiniProduitUne3.png") no-repeat;
+        background-size:cover;
     }
 
 .search-form .form-group span.form-control-feedback {
@@ -174,7 +204,6 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top:100px;
 }
 
 .footer_txt {
