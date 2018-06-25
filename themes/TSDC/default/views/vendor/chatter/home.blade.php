@@ -180,8 +180,8 @@
 
             <div id="new_discussion_footer">
 
-            	<button id="submit_discussion" class="btn btn-success pull-right"><i class="chatter-new"></i> @lang('chatter::messages.discussion.create')</button>
-            	<a href="/{{ Config::get('chatter.routes.home') }}" class="btn btn-default pull-right" id="cancel_discussion"><i class="chatter-delete"></i>@lang('chatter::messages.words.cancel')</a>
+            	<button style="background-image:none !important;" id="submit_discussion" class="btn btn-success pull-right"><i class="chatter-new"></i> @lang('chatter::messages.discussion.create')</button>
+            	<a style="background-image:none !important;"  href="/{{ Config::get('chatter.routes.home') }}" class="btn btn-default pull-right" id="cancel_discussion"><i class="chatter-delete"></i>@lang('chatter::messages.words.cancel')</a>
             	<div style="clear:both"></div>
             </div>
         </form>

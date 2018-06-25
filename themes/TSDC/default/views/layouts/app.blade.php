@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Police d'écriture Comfortaa -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <!-- CSS EXTERNE -->
+    <link href="style.css" rel="stylesheet" media="all" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -13,6 +21,7 @@
 
 
     <link href="{{ asset('vendor/tsdc-default/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor/tsdc-default/css/style.css') }}" rel="stylesheet">
     @stack('styles')
     @yield('css')
     @if(Request::is( Config::get('chatter.routes.home') ) || Request::is( Config::get('chatter.routes.home') . '/*' ))
@@ -20,44 +29,14 @@
       <link rel="stylesheet" href="{{ asset('vendor/tsdc-default/css/forums.css') }}" />
     @endif
         <!-- Scripts -->
-    <script>
-        window.Laravel = <?php
-        echo json_encode([
-                'csrfToken' => csrf_token(),
-        ]);
-        ?>
-    </script>
+
 
 </head>
-<body>
+<body style="background-color: white">
 <script src="{{ asset('/vendor/tsdc-default/js/app.js') }}"></script>
 @include("layouts.nav")
-<div class="container top-buffer  bottom-buffer">
+<div class="top-buffer bottom-buffer">
 
-    <div class="row">
-        <div class="col-12">
-
-            @if(session()->has('errorNotificationText'))
-                <div class="alert alert-danger alert-dismissible" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-
-                    <strong>Error!</strong> {{ session()->get('errorNotificationText') }}
-
-                </div>
-            @endif
-
-            @if(session()->has('notificationText'))
-                <div class="alert alert-success alert-dismissible" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-
-                    <strong>Success!</strong> {{ session()->get('notificationText') }}
-
-                </div>
-            @endif
-        </div>
-    </div>
 
     @yield('content')
 </div>
@@ -65,5 +44,12 @@
 @include('layouts.footer')
 @stack('scripts')
 @yield('js')
+<script>
+    window.Laravel = <?php
+    echo json_encode([
+            'csrfToken' => csrf_token(),
+    ]);
+    ?>
+</script>
 </body>
 </html>

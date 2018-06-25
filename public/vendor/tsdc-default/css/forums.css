@@ -51,12 +51,18 @@
   border: 2px solid #68b42f;
   background-color: #68b42f;
   color: #fff;
+  height: 40px;
+  font-size: 15px;
 }
 #submit_discussion{
   background-color: #68b42f;
+  height: 30px;
+  font-size: 15px;
 }
-#cancel_discussion{
+#cancel_discussion {
   color: #e52620;
+  height: 30px;
+  font-size: 15px;
 }
 #cancel_discussion:hover{
   color: #fff;
