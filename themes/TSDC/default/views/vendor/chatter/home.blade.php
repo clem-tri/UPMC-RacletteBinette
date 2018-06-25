@@ -25,8 +25,10 @@
 		@if( isset( $headline_logo ) && !empty( $headline_logo ) )
 			<img src="{{ Config::get('chatter.headline_logo') }}">
 		@else
-			<h1 id="forum_titre">@lang('Bienvenue sur le forum de chez Raclette et Binette')</h1>
-			<p id="forum_sous_titre">@lang('Partager, conseiller et communiquer')</p>
+		<!--	<h1 id="forum_titre">@lang('Bienvenue sur le forum de chez Raclette et Binette')</h1>
+			<p id="forum_sous_titre">@lang('Partager, conseiller et communiquer')</p>-->
+      <h1 id="forum_titre">@lang('chatter::intro.headline')</h1>
+  			<p id="forum_sous_titre">@lang('chatter::intro.description')</p>
 		@endif
 	</div>
 
@@ -119,10 +121,8 @@
 		        	</ul>
 	        	</div>
 
-	        	<div id="pagination">
-              <div id="pagination2">
+            <div id="pagination">
 	        		{{ $discussions->links() }}
-            </div>
 	        	</div>
 
 	        </div>
