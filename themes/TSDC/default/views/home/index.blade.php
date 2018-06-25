@@ -15,7 +15,7 @@
     <p style="margin-left:35px; font-size:9pt;">Vous êtes dans : <a href="index.php" title="Accueil">Accueil</a></p>
         <br/>
         <div class="row" style="width:100%;">
-            <div class="col-md-11 col-centered produitEnUne col-md-offset-1" style="min-height:400px; width:100%;">
+            <div class="col-md-11 col-centered produitEnUne col-md-offset-1" style="background-size:cover; min-height:400px; width:100%;">
                 <nav aria-label="navigation">
                     <ul class="pager" style="position:absolute; bottom:0; padding-bottom:150px; padding-right:50px; right:0;">
                         <li><a href="#" title="Suivant">Découvrir</a></li>
@@ -36,7 +36,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-md-3 col-centered forumImage col-md-offset-1"  style="min-height:450px; width:100%;">
+            <div class="col-md-3 col-centered forumImage col-md-offset-1"  style="background-size:cover; min-height:450px; width:100%;">
                 <h2 style="font-family:'Big John' !important; color:white; text-align:center; font-size:20pt; padding-top:310px;">Visitez notre forum</h2>
                 <nav aria-label="navigation">
                     <ul class="pager" style="position:relative; bottom:0; margin-right:auto; margin-left:auto;">
