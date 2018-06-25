@@ -2,7 +2,7 @@
 
     <!-- Logo Raclette et Binette + Barre de recherche -->
     <div class="row">
-        <div class="col-md-4"><img src="vendor/tsdc-default/images/racetbin.png" alt="Raclette et Binette" class="logorb"/></div>
+        <div class="col-md-4"><a href="{{route("home")}}"><img src="{{asset("storage/images/racetbin.png") }}" alt="Raclette et Binette" class="logorb"/></a></div>
 
         <div class=" col-md-4">
             <form action="" class="search-form">
@@ -17,31 +17,31 @@
         <!-- 4 Mini onglets -->
         <div class="col-md-4">
             <div class="grid-inner">
-                <ul class="headerLists">
+                <ul class="headerLists" style="font-family:'Comfortaa';">
                     <li>
                         <a class="headerListsItems">
-                            <img src="vendor/tsdc-default/images/icones/carte_fidelite.png" alt="Carte fidélité" />
+                            <img src="{{asset("storage/images/icones/carte_fidelite.png") }}" alt="Carte fidélité" />
                             <p class="headerListsItems_p">Carte fidélité</p>
                         </a>
                     </li>
 
                     <li>
                         <a class="headerListsItems">
-                            <img src="vendor/tsdc-default/images/icones/moncompte.png" alt="Compte utilisateur" />
+                            <img src="{{asset("storage/images/icones/moncompte.png") }}" alt="Compte utilisateur" />
                             <p class="headerListsItems_p">Mon compte</p>
                         </a>
                     </li>
 
                     <li>
                         <a class="headerListsItems">
-                            <img src="vendor/tsdc-default/images/icones/panier.png" alt="Carte fidélité" />
+                            <img src="{{asset("storage/images/icones/panier.png") }}" alt="Carte fidélité" />
                             <p class="headerListsItems_p">Mon panier</p>
                         </a>
                     </li>
 
                     <li>
                         <a class="headerListsItems">
-                            <img src="vendor/tsdc-default/images/icones/contact.png" alt="Carte fidélité" />
+                            <img src="{{asset("storage/images/icones/contact.png") }}" alt="Carte fidélité" />
                             <p class="headerListsItems_p">Nous contacter</p>
                         </a>
                     </li>
@@ -67,9 +67,9 @@
                  <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
              </li>--}}
         </ul>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="font-family:'Comfortaa';">
 
-            @guest()
+
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">Accueil<div class="border_menu">|</div>
@@ -99,7 +99,6 @@
                     <a class="nav-link" href="#">Forum<div class="border_menu">|</div>
                     </a>
                 </li>
-            @endguest()
 
 
 

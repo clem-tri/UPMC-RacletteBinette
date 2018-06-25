@@ -6,18 +6,18 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-6 panel-login" style="padding-top:40px;">
                 <div class="card">
-                    <div class="card-header">S'inscrire</div>
                     <div class="card-body">
+                    <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p style="color:white;">S'inscrire</p></span></div></div>
 
                         <div class="col-12">
                             <form method="POST" action="{{ url('/register') }}">
                                 {{ csrf_field() }}
 
                                 <div class="form-group">
-                                    <label for="first_name">Prénom</label>
-                                    <input id="first_name" type="text"
+                                    <input style="width:auto; margin:auto;"
+                                           id="first_name" placeholder="Prenom" type="text"
                                            @if($errors->has('first_name'))
                                            class="form-control is-invalid"
                                            @else
@@ -35,8 +35,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="last_name">Nom</label>
-                                    <input id="last_name" type="text"
+                                    <input style="width:auto; margin:auto;"
+                                           id="last_name" placeholder="Nom" type="text"
                                            @if($errors->has('last_name'))
                                            class="form-control is-invalid"
                                            @else
@@ -55,8 +55,8 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">Adresse e-mail</label>
-                                    <input id="email" type="email"
+                                    <input style="width:auto; margin:auto;"
+                                            id="email" placeholder="Adresse e-mail" type="email"
                                            @if($errors->has('email'))
                                            class="form-control is-invalid"
                                            @else
@@ -75,8 +75,9 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="password">Mot de passe</label>
-                                    <input id="password" type="password"
+                                    <input style="width:auto; margin:auto;"
+                                           id="password" type="password"
+                                           placeholder="Mot de passe"
                                            @if($errors->has('password'))
                                            class="form-control is-invalid"
                                            @else
@@ -92,8 +93,9 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="password-confirm">Confirmer le mot de passe</label>
-                                    <input id="password-confirm" type="password"
+                                    <input style="width:auto; margin:auto;"
+                                           id="password-confirm" type="password"
+                                           placeholder="Confirmer mot de passe"
                                            @if($errors->has('password_confirmation'))
                                            class="form-control is-invalid"
                                            @else
@@ -111,10 +113,9 @@
 
                                 <div class="form-group">
 
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary" style="background-image:none; display: block; margin : auto; font-size:10pt;">
                                         S'inscrire
                                     </button>
-
                                 </div>
                             </form>
                         </div>
