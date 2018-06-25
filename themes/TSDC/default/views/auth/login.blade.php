@@ -9,7 +9,7 @@
         <div class="col-6">
             <div class="card">
                 <div class="card-body">
-                    <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p>Se connecter</p></span></div>
+                    <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p style="color:white;">Se connecter</p></span></div>
                     <div class="col-12 panel-login" style="padding-top:40px;">
                         <form method="POST"
                               action="{{ route('login.post') }}">

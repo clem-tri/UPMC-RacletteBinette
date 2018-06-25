@@ -349,3 +349,7 @@ footer {
     color:#68B42F;
     font-size:9pt;
 }
+
+.position_form {
+    display:inline;
+}

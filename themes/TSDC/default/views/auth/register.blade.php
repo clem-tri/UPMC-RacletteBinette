@@ -9,7 +9,7 @@
             <div class="col-6 panel-login" style="padding-top:40px;">
                 <div class="card">
                     <div class="card-body">
-                    <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p>S'inscrire</p></span></div></div>
+                    <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p style="color:white;">S'inscrire</p></span></div></div>
 
                         <div class="col-12">
                             <form method="POST" action="{{ url('/register') }}">

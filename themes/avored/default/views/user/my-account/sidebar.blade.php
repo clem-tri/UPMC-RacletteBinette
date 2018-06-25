@@ -16,7 +16,7 @@
 
             <a href="{{ route('my-account.home') }}" class="list-group-item list-group-item-action">
 
-                Overiew </a>
+                Overview </a>
 
             <a href="{{ route('my-account.edit') }}" class="list-group-item list-group-item-action">
 
