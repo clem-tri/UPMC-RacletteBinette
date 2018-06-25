@@ -35,18 +35,20 @@ foreach($attributes as $attrKey => $attrValue) {
 }
 
 @endphp
-
+<div class="panel-login" style="padding-top:40px;">
 <div class="form-group">
     @if(isset($label))
-        <label for="{{ $name }}">{{ $label }}</label>
-    @endif
-    <input {!! $attrString !!} />
+        <label style="padding-right:150px; display:block; text-align:center; font-size:10pt; color:white; font-family:'Comfortaa';" for="{{ $name }}">{{ $label }}</label>
 
+    <input style="width:auto; margin:auto;" {!! $attrString !!} class="form-control" type="{{$name}}" id="{{$name}}"/>
+    @endif
     @if($errors->has($name))
         <div class="invalid-feedback">
             {{ $errors->first($name) }}
         </div>
     @endif
 
+
+</div>
 
 </div>

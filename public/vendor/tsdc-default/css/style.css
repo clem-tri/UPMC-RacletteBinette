@@ -7,16 +7,13 @@ body {
 
 @font-face {
     font-family: "Big John";
-    font-style: bold;
     src: url('../fonts/BIG-JOHN.otf');
 }
 
 @font-face {
     font-family: "Slim Joe" !important;
-    font-style: bold;
     src: url('../fonts/Slim-Joe.otf');
 }
-
 
 /* Haut de page "Header" */
 
@@ -102,30 +99,30 @@ body {
     width:100%;
 }
     .produitEnUne {
-        background:url("../images/produitUne.png") no-repeat;
+        background:url("../../../storage/images/produitUne.png") no-repeat;
     }
 
     .produitSousUne {
-        background:url("../images/produitSousUne.png") no-repeat;
+        background:url("../../../storage/images/produitSousUne.png") no-repeat;
         background-size: cover;
     }
 
     .forumImage {
-        background:url("../images/forumImage.png") no-repeat;
+        background:url("../../../storage/images/forumImage.png") no-repeat;
     }
 
     .produit1 {
-        background:url("../images/MiniProduitUne1.png") no-repeat;
+        background:url("../../../storage/images/MiniProduitUne1.png") no-repeat;
         background-size: cover;
     }
 
     .produit2 {
-        background:url("../images/MiniProduitUne2.png") no-repeat;
+        background:url("../../../storage/images/MiniProduitUne2.png") no-repeat;
         background-size:cover;
     }
 
     .produit3 {
-        background:url("../images/MiniProduitUne3.png") no-repeat;
+        background:url("../../../storage/images/MiniProduitUne3.png") no-repeat;
         background-size:cover;
     }
 
@@ -330,13 +327,27 @@ footer {
 }
 
 .card-body {
-    background-color: #68B42F;
+    background-color:#68B42F;
     border-radius: 10px;
 }
 
 .title_auth {
     text-align:center;
-    color:white;
+    color:white !important;
     font-family: "Big John";
     font-size:12pt;
+}
+
+/* Page informations profil utilisateur */
+
+.informations th {
+    font-family: Comfortaa;
+    color:#68B42F;
+    font-size:10pt;
+}
+
+.informations td {
+    font-family: Comfortaa;
+    color:#68B42F;
+    font-size:9pt;
 }

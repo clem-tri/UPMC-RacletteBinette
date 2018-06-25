@@ -5875,8 +5875,8 @@ input[type="button"].btn-block {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
+  border:2px solid #68B42F;
+  border-radius:10px;
 }
 
 .list-group-item-action {

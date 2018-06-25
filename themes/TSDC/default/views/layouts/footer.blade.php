@@ -63,28 +63,28 @@
                 <ul>
                     <li>
                         <a class="CategoriesListItem">
-                            <img src="vendor/tsdc-default/images/icones/cb.png" alt="Carte bancaire" />
+                            <img src="{{asset("storage/images/icones/cb.png") }}" alt="Carte bancaire" />
                             <p class="paiementListItem_text">Carte bancaire</p>
                         </a>
                     </li>
 
                     <li>
                         <a class="CategoriesListItem">
-                            <img src="vendor/tsdc-default/images/icones/mc.png" alt="MasterCard" />
+                            <img src="{{asset("storage/images/icones/mc.png") }}" alt="MasterCard" />
                             <p class="paiementListItem_text">MasterCard</p>
                         </a>
                     </li>
 
                     <li>
                         <a class="CategoriesListItem">
-                            <img src="vendor/tsdc-default/images/icones/pp.png" alt="PayPal" />
+                            <img src="{{asset("storage/images/icones/pp.png") }}" alt="PayPal" />
                             <p class="paiementListItem_text">PayPal</p>
                         </a>
                     </li>
 
                     <li>
                         <a class="CategoriesListItem">
-                            <img src="vendor/tsdc-default/images/icones/visa.png" alt="Visa" />
+                            <img src="{{asset("storage/images/icones/visa.png") }}" alt="Visa" />
                             <p class="paiementListItem_text">Visa</p>
                         </a>
                     </li>
@@ -97,7 +97,7 @@
         <div class="col-md-3">
             <h4>Service client</h4>
             <div class="rectangle_white">
-                <img class="serviceClient_image" src="vendor/tsdc-default/images/icones/sc.png" alt="Service client" />
+                <img class="serviceClient_image" src="{{asset("storage/images/icones/sc.png") }}" alt="Service client" />
                 <p class="serviceclient_text"><br/>Une question ?<br/>Veuillez contacter notre service client ou consulter l'onglet Contact</p>
             </div>
         </div>
@@ -106,7 +106,7 @@
         <div class="col-md-3">
             <h4>Livraison</h4>
             <div class="rectangle_white">
-                <img class="serviceLivraison_image" src="vendor/tsdc-default/images/icones/livraison.png" alt="Livraison" />
+                <img class="serviceLivraison_image" src="{{asset("storage/images/icones/livraison.png") }}" alt="Livraison" />
                 <p class="servicelivraison_text"><br/>Livraison offerte à partir de 10 € d’achat en France métropolitaine</p>
             </div>
         </div>
@@ -118,31 +118,31 @@
                 <ul class="align_image">
                     <li>
                         <a href="#" target="_blank">
-                            <img src="vendor/tsdc-default/images/icones/sn.png" alt="Suivez-nous" />
+                            <img src="{{asset("storage/images/icones/sn.png") }}" alt="Suivez-nous" />
                         </a>
                     </li>
 
                     <li>
                         <a href="#" target="_blank">
-                            <img src="vendor/tsdc-default/images/icones/insta.png" alt="Instagram" />
+                            <img src="{{asset("storage/images/icones/insta.png") }}" alt="Instagram" />
                         </a>
                     </li>
 
                     <li>
                         <a href="#" target="_blank">
-                            <img src="vendor/tsdc-default/images/icones/youtube.png" alt="Youtube" />
+                            <img src="{{asset("storage/images/icones/youtube.png") }}" alt="Youtube" />
                         </a>
                     </li>
 
                     <li>
                         <a href="#" target="_blank">
-                            <img src="vendor/tsdc-default/images/icones/twitter.png" alt="Twitter" />
+                            <img src="{{asset("storage/images/icones/twitter.png") }}" alt="Twitter" />
                         </a>
                     </li>
 
                     <li>
                         <a href="#" target="_blank">
-                            <img src="vendor/tsdc-default/images/icones/fb.png" alt="Facebook" />
+                            <img src="{{asset("storage/images/icones/fb.png") }}" alt="Facebook" />
                         </a>
                     </li>
                 </ul>

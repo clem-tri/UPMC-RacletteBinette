@@ -1,9 +1,9 @@
-<div class="profile-sidebar">
+<div class="profile-sidebar" >
 
 
 
-    <div class="profile-usermenu">
-        <ul class="collection list-group">
+    <div class="profile-usermenu" >
+        <ul class="collection list-group" >
             <li class="list-group-item">
             @if($user->image_path == "")
                 <img src="http://placehold.it/250x250" class="img-responsive img-thumbnail" alt="">
