@@ -95,7 +95,7 @@
                                 <div class="form-group">
                                     <input style="width:auto; margin:auto;"
                                            id="password-confirm" type="password"
-                                           placeholder="Confirmer le mot de passe"
+                                           placeholder="Confirmer mot de passe"
                                            @if($errors->has('password_confirmation'))
                                            class="form-control is-invalid"
                                            @else
