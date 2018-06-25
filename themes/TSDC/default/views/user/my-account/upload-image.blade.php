@@ -4,22 +4,22 @@
 @section('meta_description','Upload My Account E commerce')
 
 @section('content')
+    <div class="container">
     <div class="row profile">
         <div class="col-3">
             @include('user.my-account.sidebar')
         </div>
         <div class="col-9">
 
-            <div class="card">
-                <div class="card-header">
-                    Profile Image Upload
-                </div>
-                <div class="card-body">
+            <div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px;">
+                <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+                <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p style="color:white">Upload Image</p></span> </div> </div>
+
+
                     <form action="{{ route('my-account.upload-image.post') }}" method="post" enctype="multipart/form-data">
 
                         {{ csrf_field() }}
-                        <div class="form-group">
-                            <label for="profile_image">Profile Image</label>
+                        <div class="form-group" style="padding-top:20px;">
                             <input type="file"
                                    @if($errors->has('profile_image'))
                                    class="is-invalid form-control"
@@ -36,14 +36,16 @@
                         </div>
 
                         <div class="form-group">
-                            <button class="btn btn-primary" type="submit">Upload Image</button>
+
+                            <button type="submit" class="btn btn-primary" style="background-color:#68B42F !important; color:white !important; background-image:none; display: block; margin : auto; font-size:10pt;">
+                                Charger l'image
+                            </button>
                         </div>
                     </form>
-
-                </div>
             </div>
 
         </div>
+    </div>
     </div>
 
 @endsection

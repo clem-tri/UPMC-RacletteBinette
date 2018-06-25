@@ -4,7 +4,8 @@
 @section('meta_description','My Order List Account E commerce')
 
 @section('content')
-    <div class="row">
+    <div class="container">
+    <div class="row profile">
         <div class="col-md-3">
             @include('user.my-account.sidebar')
         </div>
@@ -52,7 +53,7 @@
 
                 </table>
             @endif
-
+        </div>
         </div>
     </div>
 @endsection
