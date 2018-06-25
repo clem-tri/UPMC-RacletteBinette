@@ -86,7 +86,7 @@ class PropertyController extends Controller
      */
     public function destroy(Model $property)
     {
-        Model::destroy($id);
+        Model::destroy($property->getAttributes());
 
         return redirect()->route('admin.property.index');
     }

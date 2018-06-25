@@ -119,6 +119,7 @@ class ProductController extends Controller
      */
     public function update(ProductRequest $request, ProductModel $product)
     {
+        //dd($request->all());
         try {
             //$product = ProductModel::findorfail($id);
             $product->saveProduct($request->all());

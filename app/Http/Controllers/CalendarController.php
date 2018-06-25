@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 
+use App\PeriodsProduct;
 use AvoRed\Framework\Models\Database\Product;
 use MaddHatter\LaravelFullcalendar\Facades\Calendar;
 
@@ -16,6 +17,11 @@ class CalendarController extends Calendar
 {
 
     public function index(){
+
+     $periodes =    PeriodsProduct::all();
+
+     foreach ($periodes as $periode)
+         dd($periode->product());
 
         $events = [];
 
