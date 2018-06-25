@@ -17,7 +17,7 @@
         <!-- 4 Mini onglets -->
         <div class="col-md-4">
             <div class="grid-inner">
-                <ul class="headerLists">
+                <ul class="headerLists" style="font-family:'Comfortaa';">
                     <li>
                         <a class="headerListsItems">
                             <img src="{{asset("storage/images/icones/carte_fidelite.png") }}" alt="Carte fidélité" />
@@ -67,7 +67,7 @@
                  <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
              </li>--}}
         </ul>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="font-family:'Comfortaa';">
 
 
 

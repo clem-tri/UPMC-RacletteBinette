@@ -3,7 +3,7 @@
 
 
     <div class="profile-usermenu" >
-        <ul class="collection list-group" >
+        <ul class="collection list-group" style="font-family: 'Comfortaa';">
             <li class="list-group-item">
             @if($user->image_path == "")
                 <img src="http://placehold.it/250x250" class="img-responsive img-thumbnail" alt="">
@@ -16,7 +16,7 @@
 
             <a href="{{ route('my-account.home') }}" class="list-group-item list-group-item-action">
 
-                Overview </a>
+                Overiew </a>
 
             <a href="{{ route('my-account.edit') }}" class="list-group-item list-group-item-action">
 

@@ -2,7 +2,6 @@ body {
     overflow-x: hidden;
     margin:0;
     padding:0;
-    font-family: 'Comfortaa', cursive;
 }
 
 @font-face {
@@ -333,7 +332,6 @@ footer {
 
 .title_auth {
     text-align:center;
-    color:white !important;
     font-family: "Big John";
     font-size:12pt;
 }

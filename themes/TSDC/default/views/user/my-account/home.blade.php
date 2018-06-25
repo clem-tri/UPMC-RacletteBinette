@@ -12,24 +12,24 @@
         </div>
         <div class="col-9">
 
-            <div class="card">
-                <div class="card-body">
-                <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p>Details du compte</p></span></div></div>
+            <div class="card" style="background-color:#fff; border:2px solid #68B42F;">
+                <div class="card-body" style="background-color:#fff;">
+                <div class="card-header" style="background-color:#fff;"><span class="title_auth"><p style="color:#68b42F">Details du compte</p></span></div></div>
 
 
                     <div class="table-responsive" >
                     <table class="table informations">
                         <tbody>
                         <tr>
-                            <th>Prénom</th>
+                            <th>Prénom :</th>
                             <td> {{ $user->first_name }}</td>
                         </tr>
                         <tr>
-                            <th>Nom</th>
+                            <th>Nom :</th>
                             <td> {{ $user->last_name }}</td>
                         </tr>
                         <tr>
-                            <th>Adresse e-mail</th>
+                            <th>Adresse e-mail :</th>
                             <td> {{ $user->email }}</td>
                         </tr>
                         <tr>
@@ -37,7 +37,7 @@
                             <td> {{ $user->phone }}</td>
                         </tr>
                         <tr>
-                            <th>Company Name</th>
+                            <th>Nom de l'entreprise :</th>
                             <td> {{ $user->company_name }}</td>
                         </tr>
 

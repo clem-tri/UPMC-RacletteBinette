@@ -12,7 +12,7 @@
 
 @section('content')
 
-    <p style="margin-left:35px; font-size:9pt;">Vous êtes dans : <a href="index.php" title="Accueil">Accueil</a></p>
+    <p style="margin-left:35px; font-size:9pt; font-family:'Comfortaa';">Vous êtes dans : <a href="index.php" title="Accueil">Accueil</a></p>
         <br/>
         <div class="row" style="width:100%;">
             <div class="col-md-11 col-centered produitEnUne col-md-offset-1" style="background-size:cover; min-height:400px; width:100%;">

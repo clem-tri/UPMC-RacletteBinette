@@ -53,7 +53,7 @@
 
 </style>
 
-<footer class="row">
+<footer class="row" style="font-family:'Comfortaa';">
     <div class="col-12 col-md-12">
     <div class="container-fluid bg-dark">
 
