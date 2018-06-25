@@ -52,3 +52,13 @@
   background-color: #68b42f;
   color: #fff;
 }
+#submit_discussion{
+  background-color: #68b42f;
+}
+#cancel_discussion{
+  color: #e52620;
+}
+#cancel_discussion:hover{
+  color: #fff;
+  background-color: #e52620;
+}
