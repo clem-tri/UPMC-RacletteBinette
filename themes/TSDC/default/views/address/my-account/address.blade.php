@@ -24,7 +24,7 @@
                         <div class="form-group">
 
                             <button type="submit" class="btn btn-primary" style="background-color:#68B42F !important; color:white !important; background-image:none; display: block; margin : auto; font-size:10pt;">
-                                <a style="color:white !important;" href="{{ route('my-account.address.create')}}">Creer une adresse</a>
+                                <a style="color:white !important; text-decoration:none;" href="{{ route('my-account.address.create')}}">Creer une adresse</a>
                             </button></div>
                 @else
                     <div class="row">
