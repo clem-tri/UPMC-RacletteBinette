@@ -66,7 +66,7 @@
 	    		<!-- SIDEBAR -->
 	    		<div class="chatter_sidebar">
 					<button class="btn btn-primary" id="new_discussion_btn"><i class="chatter-new"></i> @lang('chatter::messages.discussion.new')</button>
-					<a href="/{{ Config::get('chatter.routes.home') }}"><i class="chatter-bubble"></i> @lang('chatter::messages.discussion.all')</a>
+					<a href="/{{ Config::get('chatter.routes.home') }}"><i class="chatter-bubble"></i> Tous les sujets</a>
           {!! $categoriesMenu !!}
 				</div>
 				<!-- END SIDEBAR -->
