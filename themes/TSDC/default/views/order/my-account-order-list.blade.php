@@ -14,7 +14,7 @@
             <div class="main-title-wrap">
                 <span class="title">
                     Order List
-                    <!--<small>Sub title</small> -->
+                    <!--<small>sub title</small> -->
                 </span>
             </div>
             <div class="clearfix"></div>
