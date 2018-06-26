@@ -40,7 +40,7 @@
                     </li>
 
                     <li>
-                        <a class="headerListsItems">
+                        <a class="headerListsItems" href="#">
                             <img src="{{asset("storage/images/icones/contact.png") }}" alt="Carte fidélité" />
                             <p class="headerListsItems_p">Nous contacter</p>
                         </a>
