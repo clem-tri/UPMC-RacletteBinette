@@ -29,7 +29,6 @@ body {
     padding-left:35px;
 }
 
-
 ::placeholder {
     color: white !important;
 }
@@ -39,10 +38,6 @@ body {
     background-color:#68B42F !important;
 }
 
-
-.search-form {
-    padding-left:50px;
-}
 
 
 .search-form .form-group {
@@ -156,16 +151,14 @@ li {
 }
 
 .headerListsItems {
-    padding: 0 10px;
+    padding: 0 0px;
+    margin:0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
 }
 
-.headerListsItems_p {
-    font-size:9pt;
-}
 
 
 /* Menu de navigation (Navbar) */
