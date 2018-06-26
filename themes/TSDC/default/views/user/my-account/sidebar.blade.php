@@ -16,31 +16,38 @@
 
             <a href="{{ route('my-account.home') }}" class="list-group-item list-group-item-action">
 
-                Overview </a>
+                Aperçu </a>
 
             <a href="{{ route('my-account.edit') }}" class="list-group-item list-group-item-action">
 
-                Edit Account</a>
+               Modifier compte</a>
 
 
             <a href="{{ route('my-account.upload-image') }}" class="list-group-item list-group-item-action">
 
-                Upload Image</a>
+                Changer d'image</a>
             <a href="{{ route('my-account.order.list') }}" class="list-group-item list-group-item-action">
 
-                My Order</a>
+                Mes commandes</a>
             <a href="{{ route('my-account.address.index') }}" class="list-group-item list-group-item-action">
 
-                Address </a>
+                Addresse </a>
+                <a href="{{ route('my-account.fidelite') }}" class="list-group-item list-group-item-action">
+
+                    Carte de fidélité </a>
             <a href="{{ route('my-account.wishlist.list') }}" class="list-group-item list-group-item-action">
 
-                My Wishlist</a>
+                Ma liste de souhaits</a>
             <a href="{{ route('my-account.change-password') }}" class="list-group-item list-group-item-action">
 
-                Change Password</a>
+                Changer mot de passe</a>
             <a href="{{ route('logout') }}" class="list-group-item list-group-item-action">
 
-                Logout </a>
+                Se déconnecter </a>
+
+            <a href="{{ route('my-account.download-personnal-infos') }}" class="list-group-item list-group-item-action">
+
+                Récupérer mes informations </a>
 
 
         </ul>

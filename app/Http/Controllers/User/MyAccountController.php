@@ -28,6 +28,13 @@ class MyAccountController extends Controller
         return view('user.my-account.edit')
             ->with('user', $user);
     }
+    public function fidelite()
+    {
+        $user = Auth::user();
+
+        return view('user.my-account.fidelite')
+            ->with('user', $user);
+    }
 
     /**
      *
@@ -39,6 +46,14 @@ class MyAccountController extends Controller
      *
      */
     public function store(UserProfileRequest $request)
+    {
+        $user = Auth::user();
+        $user->update($request->all());
+
+        return redirect()->route('my-account.home');
+    }
+
+    public function store_fidelite(UserProfileRequest $request)
     {
         $user = Auth::user();
         $user->update($request->all());

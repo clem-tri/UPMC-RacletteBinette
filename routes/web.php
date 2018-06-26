@@ -52,6 +52,10 @@ Route::middleware('auth')
         Route::get('', 'User\MyAccountController@home')->name('home');
         Route::get('edit', 'User\MyAccountController@edit')->name('edit');
         Route::post('edit', 'User\MyAccountController@store')->name('store');
+
+        Route::get('fidelite', 'User\MyAccountController@fidelite')->name('fidelite');
+        Route::post('fidelite', 'User\MyAccountController@store_fidelite')->name('store_fidelite');
+
         Route::get('upload-image', 'User\MyAccountController@uploadImage')->name('upload-image');
         Route::post('upload-image', 'User\MyAccountController@uploadImagePost')->name('upload-image.post');
         Route::get('change-password', 'User\MyAccountController@changePassword')->name('change-password');
