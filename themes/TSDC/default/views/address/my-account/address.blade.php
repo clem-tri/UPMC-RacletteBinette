@@ -4,22 +4,28 @@
 @section('meta_description','My Address List Account E commerce')
 
 @section('content')
+    <div class="container">
         <div class="row profile">
             <div class="col-md-3">
                 @include('user.my-account.sidebar')
             </div>
 
             <div class="col-9">
-                <div class="main-title-wrap mb-3">
-                    <span class="h1">Addresses</span>
 
-                    <div class="float-right mr-3">
-                        <a class="btn btn-primary" href="{{ route('my-account.address.create')}}">Create Address</a>
-                    </div>
+                <div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px;">
+                    <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+                        <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p style="color:white">Adresses</p></span></div></div>
 
-                </div>
+
+
+
                 @if(count($addresses) <= 0)
-                    <p>Sorry No Address Found</p>
+                    <p style="padding-top:20px;">Sorry No Address Found</p>
+                        <div class="form-group">
+
+                            <button type="submit" class="btn btn-primary" style="background-color:#68B42F !important; color:white !important; background-image:none; display: block; margin : auto; font-size:10pt;">
+                                <a style="color:white !important;" href="{{ route('my-account.address.create')}}">Creer une adresse</a>
+                            </button></div>
                 @else
                     <div class="row">
                         @foreach($addresses as $address)
@@ -88,5 +94,7 @@
                 @endif
             </div>
         </div>
+    </div>
+    </div>
 
 @endsection
