@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Fidelite;
 use AvoRed\Ecommerce\Http\Requests\ChangePasswordRequest;
 use App\Http\Requests\UploadUserImageRequest;
 use App\Http\Requests\UserProfileRequest;
 use AvoRed\Ecommerce\Models\Database\Address;
 use AvoRed\Ecommerce\Models\Database\Country;
+use AvoRed\Ecommerce\Models\Database\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use AvoRed\Framework\Image\Facade as Image;
@@ -142,7 +145,7 @@ class MyAccountController extends Controller
             fwrite($handle, "<div>Code postal : $address->postcode</div>" );
             fwrite($handle, "<div>Ville : $address->city</div>" );
             fwrite($handle, "<div>Pays : $pays->name</div>" );
-            fwrite($handle, "<div>Télép : $pays->name</div>" );
+            fwrite($handle, "<div>Téléphone : $address->phone</div>" );
         }
 
 
@@ -158,4 +161,37 @@ class MyAccountController extends Controller
         unlink($filename);
         exit;
     }
+
+
+    public function editFidelite()
+    {
+       $fidelite = Fidelite::where('user_id', Auth::user()->id)->first();
+
+        return view('user.my-account.fidelite')
+            ->with('fidelite', $fidelite);
+    }
+
+
+    public function storeFidelite(Request $request)
+    {
+        $fidelite = new Fidelite();
+        $fidelite->numero_fidelite = $request->numero_fidelite;
+        $fidelite->user_id = Auth::user()->id;
+        $fidelite->save();
+
+        return redirect()->route('my-account.home');
+    }
+
+
+    public function delete(){
+        return view('user.my-account.delete');
+    }
+
+    public function deletePost(){
+        User::destroy(Auth::user()->id);
+
+        return redirect()->route('home');
+    }
+
+
 }

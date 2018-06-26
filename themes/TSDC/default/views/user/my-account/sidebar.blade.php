@@ -22,6 +22,10 @@
 
                Modifier compte</a>
 
+            <a href="{{ route('my-account.delete') }}" class="list-group-item list-group-item-action">
+
+                Supprimer compte</a>
+
 
             <a href="{{ route('my-account.upload-image') }}" class="list-group-item list-group-item-action">
 
@@ -38,13 +42,20 @@
             <a href="{{ route('my-account.change-password') }}" class="list-group-item list-group-item-action">
 
                 Changer mot de passe</a>
-            <a href="{{ route('logout') }}" class="list-group-item list-group-item-action">
-
-                Se déconnecter </a>
 
             <a href="{{ route('my-account.download-personnal-infos') }}" class="list-group-item list-group-item-action">
 
                 Récupérer mes informations </a>
+
+           <a href="{{ route('my-account.fidelite') }}" class="list-group-item list-group-item-action">
+
+                Numéro de carte de fidélité</a>
+
+            <a href="{{ route('logout') }}" class="list-group-item list-group-item-action">
+
+                Se déconnecter </a>
+
+
 
 
         </ul>

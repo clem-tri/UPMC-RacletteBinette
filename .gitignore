@@ -37,3 +37,5 @@ storage/framework/bootstrap/cache/services.php
 composer.lock
 public/mix-manifest.json
 package-lock.json
+
+/.idea/
