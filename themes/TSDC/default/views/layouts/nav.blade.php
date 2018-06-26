@@ -72,7 +72,7 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Accueil<div class="border_menu">|</div>
+                    <a class="nav-link" href="{{url('/')}}">Accueil<div class="border_menu">|</div>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -96,7 +96,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Forum<div class="border_menu">|</div>
+                    <a class="nav-link" href="{{url('/forums')}}">Forum<div class="border_menu">|</div>
                     </a>
                 </li>
 
