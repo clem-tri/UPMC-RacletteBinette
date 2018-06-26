@@ -1,0 +1,351 @@
+body {
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: "Big John";
+    src: url('../fonts/BIG-JOHN.otf');
+}
+
+@font-face {
+    font-family: "Slim Joe" !important;
+    src: url('../fonts/Slim-Joe.otf');
+}
+
+/* Haut de page "Header" */
+
+.page-header {
+    background-color:white;
+    margin:0;
+    padding:0;
+    height:130px;
+}
+
+
+.logorb {
+    padding-top:10px;
+    padding-left:35px;
+}
+
+
+::placeholder {
+    color: white !important;
+}
+
+
+.container-fluid {
+    background-color:#68B42F !important;
+}
+
+
+.search-form {
+    padding-left:50px;
+}
+
+
+.search-form .form-group {
+    transition: all 0.35s, border-radius 0s;
+    width: 50%;
+    height: 35px;
+    background-color: #68B42F;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    margin-top:40px;
+}
+
+
+.search-form .form-group input.form-control {
+    padding-right: 20px;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    display:block;
+}
+
+/* Boutons */
+
+.pager li>a {
+    background-color: #68B42F;
+    color:white;
+    width:100px;
+}
+
+.pager li>a:hover {
+    background-color: #68B42F;
+    opacity:0.9;
+}
+
+.circle{
+    float:right;
+    width:100px;
+    background-color: #68B42F;
+    height:100px;
+    margin-top:-20px;
+    margin-right:-35px;
+    text-align:center;
+    color:white;
+    border-radius:100px;
+}
+
+/* ----------- */
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    width:100%;
+}
+    .produitEnUne {
+        background:url("../../../storage/images/produitUne.png") no-repeat;
+    }
+
+    .produitSousUne {
+        background:url("../../../storage/images/produitSousUne.png") no-repeat;
+        background-size: cover;
+    }
+
+    .forumImage {
+        background:url("../../../storage/images/forumImage.png") no-repeat;
+    }
+
+    .produit1 {
+        background:url("../../../storage/images/MiniProduitUne1.png") no-repeat;
+        background-size: cover;
+    }
+
+    .produit2 {
+        background:url("../../../storage/images/MiniProduitUne2.png") no-repeat;
+        background-size:cover;
+    }
+
+    .produit3 {
+        background:url("../../../storage/images/MiniProduitUne3.png") no-repeat;
+        background-size:cover;
+    }
+
+.search-form .form-group span.form-control-feedback {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #3596e0;
+    left: initial;
+    font-size: 14px;
+}
+
+/* Icônes header */
+
+.headerLists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin: 40px 0 20px;
+}
+li {
+    list-style: none;box-sizing: border-box;
+}
+
+.headerListsItems {
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.headerListsItems_p {
+    font-size:9pt;
+}
+
+
+/* Menu de navigation (Navbar) */
+
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow:none !important;
+    color:white !important;
+    font-size:10pt;
+    text-align:left;
+}
+
+
+.border_menu {
+    color:white;
+    font-size:11pt;
+    display:inline;
+    padding-left:20px;
+}
+
+
+/* Fil d'ariane */
+
+.ariane {
+    margin-left:35px;
+}
+
+/* Footer */
+footer {
+    height:300px;
+    background-color: #68B42F;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer_txt {
+    font-size:10pt;
+    margin-top:40px;
+    border-top:1px solid white;
+}
+    .footer_txt p {
+        text-align:center;
+        cursor:pointer;
+        margin-top:20px;
+        color:white;
+    }
+    .footer_txt a {
+        color:white;
+        padding-right:10px;
+        padding-left:10px;
+    }
+
+
+.rectangle_white {
+    margin-top:70px;
+    margin-left:40px;
+    width:180px;
+    height:115px;
+    background-color:white;
+}
+.rectangle_white ul {
+    margin:0;
+    padding:0;
+}
+.rectangle_white li {
+    padding-left:15px;
+    padding-top:7px;
+}
+
+
+.rectangle_transparent {
+    margin-top:50px;
+    margin-left:-50px;
+    width:450px;
+    height:115px;
+    background-color:transparent;
+}
+.rectangle_transparent ul {
+    margin:0;
+    padding:0;
+}
+
+/* Bloc Paiement */
+
+.CategoriesListItem {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.paiementListItem_text {
+    font-size:8pt;
+    display:inline;
+}
+
+/* Bloc Service client */
+
+.serviceClient_image {
+    float:right;
+    padding-right:15px;
+    padding-top:10px;
+}
+
+.serviceclient_text {
+    font-size:8pt;
+    padding-left:15px;
+    padding-top:10px;
+    padding-right:5px;
+}
+
+/* Bloc Livraison */
+
+.serviceLivraison_image {
+    float:right;
+    padding-right:15px;
+    padding-top:15px;
+}
+
+.servicelivraison_text {
+    font-size:8pt;
+    padding-left:15px;
+    padding-top:15px;
+    padding-right:5px;
+}
+
+/* Bloc Suivez-nous */
+
+.align_image{
+    margin: 1em 10px 0px 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 8px;
+    padding-bottom: 0px;
+    display: inline;
+}
+
+.align_image li {
+    margin: 0px;
+    display: inline;
+    padding-left:5px;
+}
+
+.align_image li>a {
+    text-decoration: none;
+}
+
+.navbar-nav {
+    border-radius:0px;
+}
+
+/* Login & Register */
+
+.card {
+    background-color:#68B42F;
+    border-radius:10px;
+}
+
+.card-body {
+    background-color:#68B42F;
+    border-radius: 10px;
+}
+
+.title_auth {
+    text-align:center;
+    font-family: "Big John";
+    font-size:12pt;
+}
+
+/* Page informations profil utilisateur */
+
+.informations th {
+    font-family: Comfortaa;
+    color:#68B42F;
+    font-size:10pt;
+}
+
+.informations td {
+    font-family: Comfortaa;
+    color:#68B42F;
+    font-size:9pt;
+}
