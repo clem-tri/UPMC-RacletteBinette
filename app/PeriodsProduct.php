@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use AvoRed\Framework\Models\Database\Product;
 class PeriodsProduct extends Model
 {
 
@@ -14,6 +14,6 @@ class PeriodsProduct extends Model
      */
     public function product()
     {
-        return $this->hasOne('AvoRed\Framework\Models\Database\Product');
+        return $this->hasOne(Product::class);
     }
 }

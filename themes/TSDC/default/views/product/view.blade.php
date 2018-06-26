@@ -8,6 +8,16 @@
     {{ $description }}
 @endsection
 
+@section('js')
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/lang-all.js"></script>
+@endsection
+
+@section('css')
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
+@endsection
+
 @section('content')
 
     <div class="container">
@@ -47,7 +57,23 @@
 
                         @endif
                     </div>
+
                 </div>
+
+
+        </div>
+        @if($calendar != null)
+        <div class="col-md-12" >
+        <div class="col-md-6 offset-md-3">
+
+                CALENDRIER D'USAGE
+                {!! $calendar->calendar() !!}
+                {!! $calendar->script() !!}
+
+
+        </div>
+            @endif
+
 
         </div>
         <div class="row">
