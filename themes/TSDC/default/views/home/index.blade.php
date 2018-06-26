@@ -37,7 +37,7 @@
                 </nav>
             </div>
             <div class="col-md-3 col-centered forumImage col-md-offset-1"  style="background-size:cover; min-height:450px; width:100%;">
-                <h2 style="font-family:'Big John' !important; color:white; text-align:center; font-size:20pt; padding-top:310px;">Visitez notre forum</h2>
+                <h2 style="font-family:'Big John' !important; color:white; text-align:center; font-size:20pt; padding-top:310px;"><a href="{{url('/forums')}}">Visitez notre forum</a></h2>
                 <nav aria-label="navigation">
                     <ul class="pager" style="position:relative; bottom:0; margin-right:auto; margin-left:auto;">
                         <li><a href="#" title="Suivant">Visiter</a></li>
