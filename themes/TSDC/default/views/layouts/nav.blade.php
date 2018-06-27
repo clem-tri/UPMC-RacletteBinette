@@ -1,3 +1,71 @@
+<header class="page-header">
+
+    <!-- Logo Raclette et Binette + Barre de recherche -->
+    <div class="row">
+        <div class="col-md-4"><a href="{{route("home")}}"><img src="{{asset("storage/images/racetbin.png") }}" alt="Raclette et Binette" class="logorb"/></a></div>
+
+        <div class=" col-md-4">
+            <form class="search-form" style="padding-left:0; width:60%;" action="{{ route('search.result') }}" method="get" role="search">
+                <div class="input-group" style="padding-top:14px; margin-top:40px;">
+                    <input style="color:white; border-radius:20px; background-color:#68B42F" type="text" class="form-control" placeholder="Rechercher..." name="search">
+                    <div class="input-group-btn">
+                        <button style="position:absolute; right:0; border-color: transparent; background-color: transparent !important;" class="btn btn-primary" type="submit">
+                            <span class="fa fa-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 4 Mini onglets -->
+        <div class="col-md-4">
+            <div class="grid-inner">
+                <ul class="headerLists" style="font-family:'Comfortaa';">
+
+                    <li class="headerListsItems">
+                            <img src="{{asset("storage/images/icones/carte_fidelite.png") }}" alt="Carte fidélité" />
+                            <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Carte fidélité</a>
+                    </li>
+
+                    <li class="headerListsItems">
+                        <img src="{{asset("storage/images/icones/moncompte.png") }}" alt="Compte utilisateur" />
+                        <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Mon compte</a>
+                    </li>
+
+                    {{--
+                    <li>
+                        <a class="headerListsItems" href="{{ route('cart.view') }}">
+                            <img src="{{asset("storage/images/icones/moncompte.png") }}" alt="Compte utilisateur" />
+                            <p class="headerListsItems_p">Mon compte</p>
+                        </a>
+                    </li>--}}
+
+                    <li class="headerListsItems">
+                            <img src="{{asset("storage/images/icones/panier.png") }}" alt="Mon panier" />
+                            <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Panier</a>
+                    </li>
+
+                    <li class="headerListsItems">
+                            <img src="{{asset("storage/images/icones/contact.png") }}" alt="Nous contacter" />
+                            <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+
+
+
+
+
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
     <div class="container">
         <ul class="navbar-nav mr-auto">
