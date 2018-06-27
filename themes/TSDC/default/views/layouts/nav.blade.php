@@ -7,7 +7,7 @@
         <div class=" col-md-4">
             <form class="search-form" style="padding-left:0; width:60%;" action="{{ route('search.result') }}" method="get" role="search">
                 <div class="input-group" style="padding-top:14px; margin-top:40px;">
-                    <input style="color:white; border-radius:20px; background-color:#68B42F" type="text" class="form-control" placeholder="Rechercher..." name="search">
+                    <input style="color:white; border-radius:20px; background-color:#68B42F" type="text" class="form-control" placeholder="Rechercher..." name="q">
                     <div class="input-group-btn">
                         <button style="position:absolute; right:0; border-color: transparent; background-color: transparent !important;" class="btn btn-primary" type="submit">
                             <span class="fa fa-search"></span>
