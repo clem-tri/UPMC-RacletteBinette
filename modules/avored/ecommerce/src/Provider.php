@@ -49,7 +49,6 @@ use AvoRed\Ecommerce\Models\Repository\MenuRepository;
 use AvoRed\Ecommerce\Models\Repository\PageRepository;
 use AvoRed\Ecommerce\Models\Repository\RoleRepository;
 use AvoRed\Ecommerce\Models\Repository\SiteCurrencyRepository;
-use AvoRed\Framework\Breadcrumb\Breadcrumb;
 
 class Provider extends ServiceProvider
 {
@@ -171,11 +170,10 @@ class Provider extends ServiceProvider
      */
     protected function registerAdminMenu()
     {
-        AdminMenuFacade::add('shop', function(AdminMenu $shopMenu) {
-            $shopMenu->label('Shop')
-                    ->route('#')
-                    ->icon('fas fas-cart-plus');
-        });
+        AdminMenuFacade::add('shop')
+            ->label('Shop')
+            ->route('#')
+            ->icon('fas fa-cart-plus');
 
         $shopMenu = AdminMenuFacade::get('shop');
 
@@ -214,11 +212,10 @@ class Provider extends ServiceProvider
             ->icon('fas fa-dollar-sign');
         $shopMenu->subMenu('order', $orderMenu);
 
-        AdminMenuFacade::add('cms',function(AdminMenu $cmsMenu) {
-            $cmsMenu->label('CMS')
-                    ->route('#')
-                    ->icon('fas fa-building');     
-        });
+        AdminMenuFacade::add('cms')
+            ->label('CMS')
+            ->route('#')
+            ->icon('fas fa-building');
 
         $cmsMenu = AdminMenuFacade::get('cms');
 
@@ -235,12 +232,10 @@ class Provider extends ServiceProvider
             ->icon('fas fa-leaf');
         $cmsMenu->subMenu('menu', $frontMenu);
 
-        AdminMenuFacade::add('system', function(AdminMenu $systemMenu) {
-            $systemMenu->label('System')
-                    ->route('#')
-                    ->icon('fas fa-cogs');
-        });
-            
+        AdminMenuFacade::add('system')
+            ->label('System')
+            ->route('#')
+            ->icon('fas fa-cogs');
         $systemMenu = AdminMenuFacade::get('system');
 
         $configurationMenu = new AdminMenu();
@@ -418,140 +413,140 @@ class Provider extends ServiceProvider
      */
     protected function registerBreadcrumb()
     {
-        BreadcrumbFacade::make('admin.dashboard', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.dashboard', function ($breadcrumb) {
             $breadcrumb->label('Dashboard');
         });
 
-        BreadcrumbFacade::make('admin.product.index', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.product.index', function ($breadcrumb) {
             $breadcrumb->label('Product')
                 ->parent('admin.dashboard');
         });
 
-        BreadcrumbFacade::make('admin.product.create', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.product.create', function ($breadcrumb) {
             $breadcrumb->label('Create')
                 ->parent('admin.dashboard')
                 ->parent('admin.product.index');
         });
 
-        BreadcrumbFacade::make('admin.product.edit', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.product.edit', function ($breadcrumb) {
             $breadcrumb->label('Edit')
                 ->parent('admin.dashboard')
                 ->parent('admin.product.index');
         });
 
-        BreadcrumbFacade::make('admin.attribute.index', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.attribute.index', function ($breadcrumb) {
             $breadcrumb->label('Attribute')
                 ->parent('admin.dashboard');
         });
 
-        BreadcrumbFacade::make('admin.attribute.create', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.attribute.create', function ($breadcrumb) {
             $breadcrumb->label('Create')
                 ->parent('admin.dashboard')
                 ->parent('admin.attribute.index');
         });
 
-        BreadcrumbFacade::make('admin.attribute.edit', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.attribute.edit', function ($breadcrumb) {
             $breadcrumb->label('Edit')
                 ->parent('admin.dashboard')
                 ->parent('admin.attribute.index');
         });
 
-        BreadcrumbFacade::make('admin.property.index', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.property.index', function ($breadcrumb) {
             $breadcrumb->label('Property')
                 ->parent('admin.dashboard');
         });
 
-        BreadcrumbFacade::make('admin.property.create', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.property.create', function ($breadcrumb) {
             $breadcrumb->label('Create')
                 ->parent('admin.dashboard')
                 ->parent('admin.property.index');
         });
 
-        BreadcrumbFacade::make('admin.attribute.edit', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.attribute.edit', function ($breadcrumb) {
             $breadcrumb->label('Edit')
                 ->parent('admin.dashboard')
                 ->parent('admin.attribute.index');
         });
 
-        BreadcrumbFacade::make('admin.order.index', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.order.index', function ($breadcrumb) {
             $breadcrumb->label('Order')
                 ->parent('admin.dashboard');
         });
 
-        BreadcrumbFacade::make('admin.order.view', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.order.view', function ($breadcrumb) {
             $breadcrumb->label('View')
                 ->parent('admin.dashboard')
                 ->parent('admin.order.index');
         });
 
-        BreadcrumbFacade::make('admin.theme.index', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.theme.index', function ($breadcrumb) {
             $breadcrumb->label('Theme')
                 ->parent('admin.dashboard');
         });
 
-        BreadcrumbFacade::make('admin.theme.create', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.theme.create', function ($breadcrumb) {
             $breadcrumb->label('Upload')
                 ->parent('admin.dashboard')
                 ->parent('admin.theme.index');
         });
 
-        BreadcrumbFacade::make('admin.role.index', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.role.index', function ($breadcrumb) {
             $breadcrumb->label('Role')
                 ->parent('admin.dashboard');
         });
 
-        BreadcrumbFacade::make('admin.role.create', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.role.create', function ($breadcrumb) {
             $breadcrumb->label('Create')
                 ->parent('admin.dashboard')
                 ->parent('admin.role.index');
         });
 
-        BreadcrumbFacade::make('admin.role.edit', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.role.edit', function ($breadcrumb) {
             $breadcrumb->label('Edit')
                 ->parent('admin.dashboard')
                 ->parent('admin.role.index');
         });
 
-        BreadcrumbFacade::make('admin.admin-user.index', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.admin-user.index', function ($breadcrumb) {
             $breadcrumb->label('Admin User')
                 ->parent('admin.dashboard');
         });
 
-        BreadcrumbFacade::make('admin.admin-user.create', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.admin-user.create', function ($breadcrumb) {
             $breadcrumb->label('Create')
                 ->parent('admin.dashboard')
                 ->parent('admin.admin-user.index');
         });
 
-        BreadcrumbFacade::make('admin.admin-user.edit', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.admin-user.edit', function ($breadcrumb) {
             $breadcrumb->label('Edit')
                 ->parent('admin.dashboard')
                 ->parent('admin.admin-user.index');
         });
 
-        BreadcrumbFacade::make('admin.admin-user.show', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.admin-user.show', function ($breadcrumb) {
             $breadcrumb->label('Show')
                 ->parent('admin.dashboard')
                 ->parent('admin.admin-user.index');
         });
 
-        BreadcrumbFacade::make('admin.configuration', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.configuration', function ($breadcrumb) {
             $breadcrumb->label('Configuration')
                 ->parent('admin.dashboard');
         });
 
-        BreadcrumbFacade::make('admin.category.index', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.category.index', function ($breadcrumb) {
             $breadcrumb->label('Category')
                 ->parent('admin.dashboard');
         });
 
-        BreadcrumbFacade::make('admin.category.create', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.category.create', function ($breadcrumb) {
             $breadcrumb->label('Create')
                 ->parent('admin.dashboard')
                 ->parent('admin.category.index');
         });
 
-        BreadcrumbFacade::make('admin.category.edit', function (Breadcrumb $breadcrumb) {
+        BreadcrumbFacade::make('admin.category.edit', function ($breadcrumb) {
             $breadcrumb->label('Edit')
                 ->parent('admin.dashboard')
                 ->parent('admin.category.index');
