@@ -39,7 +39,6 @@ body {
 }
 
 
-
 .search-form .form-group {
     transition: all 0.35s, border-radius 0s;
     width: 50%;
@@ -160,7 +159,6 @@ li {
 }
 
 
-
 /* Menu de navigation (Navbar) */
 
 .navbar-brand, .navbar-nav>li>a {
@@ -186,6 +184,7 @@ li {
 }
 
 /* Footer */
+
 footer {
     height:300px;
     background-color: #68B42F;
@@ -202,8 +201,8 @@ footer {
 }
     .footer_txt p {
         text-align:center;
-        cursor:pointer;
-        margin-top:20px;
+        padding-top:10px;
+        margin:0;
         color:white;
     }
     .footer_txt a {
@@ -221,14 +220,14 @@ footer {
     background-color:white;
 }
 .rectangle_white ul {
+    display:inline;
     margin:0;
     padding:0;
 }
 .rectangle_white li {
     padding-left:15px;
-    padding-top:7px;
+    padding-top:5px;
 }
-
 
 .rectangle_transparent {
     margin-top:50px;
