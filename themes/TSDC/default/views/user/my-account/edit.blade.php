@@ -30,7 +30,8 @@
 
 
                                 @include('partials.forms.text',['name' => 'phone','label' => 'Téléphone','model' => $user])
-                                @include('partials.forms.text',['name' => 'company_name','label' => 'Entreprise','model' => $user])
+
+                                <!--@include('partials.forms.text',['name' => 'company_name','label' => 'Entreprise','model' => $user])-->
 
 
 

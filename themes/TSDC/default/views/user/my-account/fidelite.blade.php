@@ -18,7 +18,7 @@
                 <div class="card-header" style="background-color:#68B42F;">
                     <span class="title_auth">
                         <p>
-                             Numéro de carte de fidélité
+                             Numero de carte de fidelite
                         </p>
                     </span>
                 </div>
