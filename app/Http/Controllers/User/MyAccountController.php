@@ -21,9 +21,10 @@ class MyAccountController extends Controller
     public function home()
     {
         $user = Auth::user();
+        $fidelite = Fidelite::where('user_id', $user->id)->first();
 
         return view('user.my-account.home')
-            ->with('user', $user);
+            ->with(['user'=>$user,'fidelite'=>$fidelite]);
     }
 
     public function edit()

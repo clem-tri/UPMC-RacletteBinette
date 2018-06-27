@@ -13,9 +13,9 @@
         <div class="col-9">
 
             <div class="card">
-                <div class="card-header">
+                <div class="card-header ">
                    Profil utilisateur
-                </div>
+                  </div>
                 <div class="card-body">
 
                     <div class="table-responsive" >
@@ -41,6 +41,10 @@
                             <th>Entreprise</th>
                             <td> {{ $user->company_name }}</td>
                         </tr>-->
+                        <tr>
+                          <th>Numéro de fidélité</th>
+                          <td>{{$fidelite->numero_fidelite}}</td>
+                        </tr>
 
                         </tbody>
 
