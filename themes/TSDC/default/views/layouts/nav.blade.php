@@ -27,7 +27,7 @@
                             <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Carte fidélité</a>
                     </li>
 
-                    @guest()
+                @guest()
                     <li class="headerListsItems">
                         <img src="{{asset("storage/images/icones/moncompte.png") }}" alt="Compte utilisateur" />
                         <a style="font-size:9pt;" class="nav-link" href="{{ route('login') }}">Se connecter</a>
@@ -102,12 +102,12 @@
             </li>--}}
             @endguest()
 
-                <li class="nav-item active">
+                {{--<li class="nav-item active">
                     <a class="nav-link" href="{{ route('cart.view') }}">Panier </a>
-                </li>
-                <li class="nav-item active">
+                </li>--}}
+                {{--<li class="nav-item active">
                     <a class="nav-link" href="{{ route('checkout.index') }}">Caisse</a>
-                </li>
+                </li>--}}
 
         </ul>
     </div>
