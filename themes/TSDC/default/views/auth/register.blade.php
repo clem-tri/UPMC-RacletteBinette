@@ -4,20 +4,19 @@
 @section('meta_description', 'Register to Manage your Account for AvoRed E Commerce')
 
 @section('content')
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-6">
-                <div class="card">
-                    <div class="card-header">S'inscrire</div>
-                    <div class="card-body">
-
-                        <div class="col-12">
-                            <form method="POST" action="{{ url('/register') }}">
+    <div class="row mt-4 mb-4 justify-content-center">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-header" style="border-bottom-color:white; background-color:#68B42F;"><span class="title_auth"><p style="color:white;">S'inscrire</p></span></div>
+                    <div class="col-12 panel-login" style="padding-top:40px;">
+                        <form method="POST" action="{{ url('/register') }}">
                                 {{ csrf_field() }}
 
                                 <div class="form-group">
-                                    <label for="first_name">Prénom</label>
                                     <input id="first_name" type="text"
+                                           style="width:auto; margin:auto; color:white;"
+                                           placeholder="Prénom"
                                            @if($errors->has('first_name'))
                                            class="form-control is-invalid"
                                            @else
@@ -35,8 +34,9 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="last_name">Nom</label>
                                     <input id="last_name" type="text"
+                                           style="width:auto; margin:auto; color:white;"
+                                           placeholder="Nom"
                                            @if($errors->has('last_name'))
                                            class="form-control is-invalid"
                                            @else
@@ -55,8 +55,9 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="email">Adresse e-mail</label>
                                     <input id="email" type="email"
+                                           style="width:auto; margin:auto; color:white;"
+                                           placeholder="Adresse e-mail"
                                            @if($errors->has('email'))
                                            class="form-control is-invalid"
                                            @else
@@ -75,8 +76,9 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="password">Mot de passe</label>
                                     <input id="password" type="password"
+                                           style="width:auto; margin:auto; color:white;"
+                                           placeholder="Mot de passe"
                                            @if($errors->has('password'))
                                            class="form-control is-invalid"
                                            @else
@@ -92,8 +94,9 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="password-confirm">Confirmer le mot de passe</label>
                                     <input id="password-confirm" type="password"
+                                           style="width:auto; margin:auto; color:white;"
+                                           placeholder="Confirmer mot de passe"
                                            @if($errors->has('password_confirmation'))
                                            class="form-control is-invalid"
                                            @else
@@ -109,18 +112,16 @@
 
                                 </div>
 
-                                <div class="form-group">
+                            <div class="form-group">
 
-                                    <button type="submit" class="btn btn-primary">
-                                        S'inscrire
-                                    </button>
-
-                                </div>
+                                <button type="submit" class="btn btn-primary" style="border:none; color:#68B42F; background-image:none; background-color:white; font-family: 'Big John'; display: block; margin : auto; font-size:10pt;">
+                                    S'inscrire
+                                </button>
+                            </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 @endsection
