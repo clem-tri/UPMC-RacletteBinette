@@ -1,24 +1,19 @@
-<div class="card">
-    <div class="card-body">
+<div class="card card-product">
+    <div class="card-body card-product">
 
         <a href="{{ route('product.view', $product->slug)}}" title="{{ $product->name }}">
             @include('product.view.product-image',['product' => $product])
         </a>
 
-        <div class="caption">
-            <h3>
+        <div class="caption card-product-bottom">
+            <h4>
                 <a href="{{ route('product.view', $product->slug)}}" class="product-name"
                    title="{{ $product->name }}">
                     {{ $product->name }}
                 </a>
-            </h3>
-
-            <p class="product-price">
-                € {{ number_format($product->price,2) }}
-            </p>
+            </h4>
 
             <div>
-
                 @if($product->qty >= 0)
                 <form method="post" action="{{ route('cart.add-to-cart') }}">
                     {{ csrf_field() }}
@@ -26,26 +21,26 @@
 
                 <input type="hidden" name="slug" value="{{ $product->slug }}"/>
 
-                <div class="product-stock">En Stock</div>
+                <div class="product-stock"> € {{ number_format($product->price,2) }} | En Stock</div>
                 <hr>
 
                 <div class="clearfix"></div>
                 <div class="float-left" style="margin-right: 5px;">
                     <button type="submit" class="btn btn-primary"
                             href="{{ route('cart.add-to-cart', $product->id) }}">
-                        Ajouter au panier
+                        <i class="fa fa-shopping-cart"></i>
                     </button>
                 </div>
                 </form>
 
                 @else
-                    <div class="product-stock text-danger ">Out of Stock</div>
+                    <div class="product-stock text-danger ">{{ number_format($product->price,2) }} | Indisponible</div>
                     <hr>
 
                     <div class="clearfix"></div>
                     <div class="float-left" style="margin-right: 5px;">
                         <button type="button" disabled class="btn btn-default">
-                            Ajouter au panier
+                            <i class="fa fa-shopping-cart"></i>
                         </button>
                     </div>
                 @endif
