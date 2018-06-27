@@ -16,9 +16,11 @@
 
 
 @section('content')
+<div class="container">
     <div class="row">
             <h1>Calendrier d'utilisation global</h1>
     </div>
 {!! $calendar->calendar() !!}
 {!! $calendar->script() !!}
+<div>
 @endsection
