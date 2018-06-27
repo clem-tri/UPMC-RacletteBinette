@@ -1,5 +1,5 @@
 <style>
-    h4 {
+    .h4 {
         color:white;
         margin-left:40px;
         position:relative;
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <h4>Moyen de paiement</h4>
+                <h4 class="h4">Moyen de paiement</h4>
                 <div class="rectangle_white">
                     <ul>
                         <li>
@@ -52,7 +52,7 @@
             </div>
 
             <div class="col-md-3">
-                <h4>Service client</h4>
+                <h4 class="h4">Service client</h4>
                 <div class="rectangle_white">
                     <img class="serviceClient_image" src="{{asset("storage/images/icones/sc.png") }}" alt="Service client" />
                     <p class="serviceclient_text"><br/>Une question ?<br/>Veuillez contacter notre service client ou consulter l'espace Contact ci-dessous</p>
@@ -61,7 +61,7 @@
 
 
             <div class="col-md-3">
-                <h4>Livraison</h4>
+                <h4 class="h4">Livraison</h4>
                 <div class="rectangle_white">
                     <img class="serviceLivraison_image" src="{{asset("storage/images/icones/livraison.png") }}" alt="Livraison" />
                     <p class="servicelivraison_text"><br/>Livraison offerte à partir de 10 € d’achat en France métropolitaine</p>
@@ -69,7 +69,7 @@
             </div>
 
             <div class="col-md-3">
-                <h4 class="transparent_text">Undefined</h4>
+                <h4 class="transparent_text h4">Undefined</h4>
                 <div class="rectangle_transparent">
                     <ul class="align_image">
                         <li>
@@ -111,6 +111,5 @@
                 </p>
             </div>
         </div>
-    </div>
     </div>
 </footer>
