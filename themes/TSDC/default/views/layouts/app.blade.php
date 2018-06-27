@@ -42,5 +42,6 @@
 
 @include('layouts.footer')
 @stack('scripts')
+@yield('js')
 </body>
 </html>
