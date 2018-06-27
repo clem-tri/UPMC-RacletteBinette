@@ -54,8 +54,8 @@
                     </li>
 
                     <li class="headerListsItems">
-                            <img src="{{asset("storage/images/icones/contact.png") }}" alt="Nous contacter" />
-                            <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Nous contacter</a>
+                            <img src="{{asset("storage/images/icones/caisse.png") }}" alt="Caisse" />
+                            <a style="font-size:9pt;" class="nav-link" href="{{ route('checkout.index') }}">Caisse</a>
                     </li>
                 </ul>
             </div>
