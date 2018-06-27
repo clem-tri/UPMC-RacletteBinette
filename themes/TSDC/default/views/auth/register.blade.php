@@ -15,7 +15,7 @@
 
                                 <div class="form-group">
                                     <input id="first_name" type="text"
-                                           style="width:auto; margin:auto;"
+                                           style="width:auto; margin:auto; color:white;"
                                            placeholder="Prénom"
                                            @if($errors->has('first_name'))
                                            class="form-control is-invalid"
@@ -35,7 +35,7 @@
 
                                 <div class="form-group">
                                     <input id="last_name" type="text"
-                                           style="width:auto; margin:auto;"
+                                           style="width:auto; margin:auto; color:white;"
                                            placeholder="Nom"
                                            @if($errors->has('last_name'))
                                            class="form-control is-invalid"
@@ -56,7 +56,7 @@
 
                                 <div class="form-group">
                                     <input id="email" type="email"
-                                           style="width:auto; margin:auto;"
+                                           style="width:auto; margin:auto; color:white;"
                                            placeholder="Adresse e-mail"
                                            @if($errors->has('email'))
                                            class="form-control is-invalid"
@@ -77,7 +77,7 @@
 
                                 <div class="form-group">
                                     <input id="password" type="password"
-                                           style="width:auto; margin:auto;"
+                                           style="width:auto; margin:auto; color:white;"
                                            placeholder="Mot de passe"
                                            @if($errors->has('password'))
                                            class="form-control is-invalid"
@@ -95,7 +95,7 @@
 
                                 <div class="form-group">
                                     <input id="password-confirm" type="password"
-                                           style="width:auto; margin:auto;"
+                                           style="width:auto; margin:auto; color:white;"
                                            placeholder="Confirmer mot de passe"
                                            @if($errors->has('password_confirmation'))
                                            class="form-control is-invalid"

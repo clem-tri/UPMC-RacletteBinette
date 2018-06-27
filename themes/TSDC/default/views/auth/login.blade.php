@@ -16,7 +16,7 @@
                             {{ csrf_field() }}
 
                             <div class="form-group">
-                                <input id="email" type="email" name="email" placeholder="Adresse e-mail" style="width:auto; margin:auto;"
+                                <input id="email" type="email" name="email" placeholder="Adresse e-mail" style="color:white; width:auto; margin:auto;"
                                        class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}"
                                        value="{{ old('email') }}" required autofocus >
 
@@ -29,7 +29,7 @@
                             </div>
 
                             <div class="form-group">
-                                <input id="password" style="width:auto; margin:auto;"
+                                <input id="password" style="width:auto; margin:auto; color:white;"
                                        class="form-control {{ $errors->has('password') ? ' has-error' : '' }}"
                                        type="password" placeholder="Mot de passe" name="password" required>
 
