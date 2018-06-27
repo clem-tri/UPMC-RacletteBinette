@@ -22,7 +22,7 @@ class FreeShipping extends AbstractShipping implements ShippingContract
      * Name for the Shipping Options.
      * @var string
      */
-    protected $name = 'Free Shipping';
+    protected $name = 'Livraison gratuite';
 
     /**
      * To check if Shipping Option is Enable.

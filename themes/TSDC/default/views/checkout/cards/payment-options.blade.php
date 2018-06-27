@@ -1,8 +1,8 @@
 <div class="card mb-3">
-    <div class="card-header">Payment Options</div>
+    <div class="card-header">Méthode de paiement</div>
     <div class="card-body payment-options">
 
-        <p>Please select the preferred payment method to use on this
+        <p>Veuillez sélectionner votre méthode de paiement pour cette commande.
             order.</p>
 
         <div class="payment-radio-options">
