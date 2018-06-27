@@ -13,6 +13,7 @@
 
 
     <link href="{{ asset('vendor/tsdc-default/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor/tsdc-default/css/style.css') }}" rel="stylesheet">
     @stack('styles')
     @yield('css')
     @if(Request::is( Config::get('chatter.routes.home') ) || Request::is( Config::get('chatter.routes.home') . '/*' ))
