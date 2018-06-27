@@ -8,20 +8,17 @@
     <div class="row mt-4 mb-4 justify-content-center">
         <div class="col-6">
             <div class="card">
-                <div class="card-header"><span>Se connecter</span></div>
                 <div class="card-body">
-                    <div class="col-12">
+                    <div class="card-header" style="border-bottom-color:white; background-color:#68B42F;"><span class="title_auth"><p style="color:white;">Se connecter</p></span></div>
+                    <div class="col-12 panel-login" style="padding-top:40px;">
                         <form method="POST"
                               action="{{ route('login.post') }}">
                             {{ csrf_field() }}
 
                             <div class="form-group">
-                                <label for="email">Adresse e-mail</label>
-
-
-                                <input id="email" type="email" name="email"
+                                <input id="email" type="email" name="email" placeholder="Adresse e-mail" style="width:auto; margin:auto;"
                                        class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}"
-                                       value="{{ old('email') }}" required autofocus>
+                                       value="{{ old('email') }}" required autofocus >
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
@@ -32,10 +29,10 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="password">Mot de passe</label>
-                                <input id="password"
+                                <input id="password" style="width:auto; margin:auto;"
                                        class="form-control {{ $errors->has('password') ? ' has-error' : '' }}"
-                                       type="password" name="password" required>
+                                       type="password" placeholder="Mot de passe" name="password" required>
+
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
@@ -44,44 +41,45 @@
                                 @endif
 
                             </div>
-
-                            <div class="checkbox">
-                                <label>
-                                    <input id="rememberme" type="checkbox" name="remember"/>
-                                    Se souvenir de moi
-                                </label>
+                            <div class="rememberme">
+                                <div class="checkbox" >
+                                    <label>
+                                        <input id="rememberme" type="checkbox" name="remember" />
+                                        Se souvenir de moi
+                                    </label>
+                                </div>
                             </div>
 
 
                             <div class="form-group">
 
-                                <button type="submit" class="btn btn-primary">
-                                    Se connecter
+                                <button type="submit" class="btn btn-primary" style="border:none; color:#68B42F; background-image:none; background-color:white; font-family: 'Big John'; display: block; margin : auto; font-size:10pt;">
+                                  Se connecter
                                 </button>
                             </div>
 
-                                <div class="form-group">
-                                   <a class="" href="{{ url('/password/reset') }}">
-                                     Mot de passe oublié?
-                                  </a>
-                                </div>
+                            <div class="form-group">
+                                <a class="a_of_formgroup" href="{{ url('/password/reset') }}">
+                                    Mot de passe oublié?
+                                </a>
+                            </div>
 
-                                <div>
-                                    <a class="" href="{{ url('register') }}">
-                                        Créer un compte
+                            <div class="form-group">
+                                <a class="a_of_formgroup" href="{{ url('register') }}">
+                                    Créer un compte
+                                </a>
+                            </div>
+
+
+
+                            @if($errors->has('enableResendLink'))
+                                <div class="form-group">
+
+                                    <a class="" href="{{ route('user.activation.resend') }}">
+                                        Renvoyer le code d'activation
                                     </a>
                                 </div>
-
-
-
-                                @if($errors->has('enableResendLink'))
-                                    <div class="form-group">
-
-                                        <a class="" href="{{ route('user.activation.resend') }}">
-                                            Renvoyer le code d'activation
-                                        </a>
-                                    </div>
-                                @endif
+                            @endif
 
 
 
