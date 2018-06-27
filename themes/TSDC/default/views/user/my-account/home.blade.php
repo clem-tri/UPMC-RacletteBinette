@@ -37,10 +37,10 @@
                             <th>Téléphone</th>
                             <td> {{ $user->phone }}</td>
                         </tr>
-                        <tr>
+                      <!--  <tr>
                             <th>Entreprise</th>
                             <td> {{ $user->company_name }}</td>
-                        </tr>
+                        </tr>-->
 
                         </tbody>
 
