@@ -12,7 +12,7 @@
         <div class="col-10">
             <div class="row">
                 @if(count($category->products) <= 0)
-                    <p>Sorry No Product Found</p>
+                    <p>Aucun produit trouvé</p>
                 @else
 
                     @foreach($products as $product)

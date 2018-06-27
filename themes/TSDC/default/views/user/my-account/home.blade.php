@@ -41,10 +41,18 @@
                             <th>Entreprise</th>
                             <td> {{ $user->company_name }}</td>
                         </tr>-->
+
                         <tr>
                           <th>Numéro de fidélité</th>
-                          <td>{{$fidelite->numero_fidelite}}</td>
+
+                          <td>
+                              @if($fidelite != null)
+                                  {{$fidelite->numero_fidelite}}
+                              @endif
+                          </td>
+
                         </tr>
+
 
                         </tbody>
 
