@@ -336,6 +336,10 @@ footer {
     border-radius: 10px;
 }
 
+.card-review{
+    background-color: white;
+}
+
 .title_auth {
     text-align:center;
     font-family: "Big John";
