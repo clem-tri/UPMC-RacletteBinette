@@ -6,11 +6,13 @@
         </a>
 
         <div class="caption card-product-bottom">
-            <h4>
-                <a href="{{ route('product.view', $product->slug)}}" class="product-name"
-                   title="{{ $product->name }}">
-                    {{ $product->name }}
-                </a>
+            <h4 class="center-block">
+                    <a href="{{ route('product.view', $product->slug)}}" class="product-name"
+                       title="{{ $product->name }}" style="font-family: Comfortaa;">
+                        {{ $product->name }}
+                    </a>
+
+
             </h4>
 
             <div>
