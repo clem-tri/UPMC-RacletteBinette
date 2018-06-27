@@ -25,8 +25,10 @@
 		@if( isset( $headline_logo ) && !empty( $headline_logo ) )
 			<img src="{{ Config::get('chatter.headline_logo') }}">
 		@else
-			<h1 id="forum_titre">@lang('Bienvenue sur le forum de chez Raclette et Binette')</h1>
-			<p id="forum_sous_titre">@lang('Partager, conseiller et communiquer')</p>
+		<!--	<h1 id="forum_titre">@lang('Bienvenue sur le forum de chez Raclette et Binette')</h1>
+			<p id="forum_sous_titre">@lang('Partager, conseiller et communiquer')</p>-->
+      <h1 id="forum_titre">@lang('chatter::intro.headline')</h1>
+  			<p id="forum_sous_titre">@lang('chatter::intro.description')</p>
 		@endif
 	</div>
 
@@ -64,7 +66,7 @@
 	    		<!-- SIDEBAR -->
 	    		<div class="chatter_sidebar">
 					<button class="btn btn-primary" id="new_discussion_btn"><i class="chatter-new"></i> @lang('chatter::messages.discussion.new')</button>
-					<a href="/{{ Config::get('chatter.routes.home') }}"><i class="chatter-bubble"></i> @lang('chatter::messages.discussion.all')</a>
+					<a href="/{{ Config::get('chatter.routes.home') }}"><i class="chatter-bubble"></i> Tous les sujets</a>
           {!! $categoriesMenu !!}
 				</div>
 				<!-- END SIDEBAR -->
@@ -119,10 +121,8 @@
 		        	</ul>
 	        	</div>
 
-	        	<div id="pagination">
-              <div id="pagination2">
+            <div id="pagination">
 	        		{{ $discussions->links() }}
-            </div>
 	        	</div>
 
 	        </div>
@@ -179,9 +179,9 @@
             <input type="hidden" name="_token" id="csrf_token_field" value="{{ csrf_token() }}">
 
             <div id="new_discussion_footer">
-            	<input type='text' id="color" name="color" /><span class="select_color_text">@lang('chatter::messages.editor.select_color_text')</span>
-            	<button id="submit_discussion" class="btn btn-success pull-right"><i class="chatter-new"></i> @lang('chatter::messages.discussion.create')</button>
-            	<a href="/{{ Config::get('chatter.routes.home') }}" class="btn btn-default pull-right" id="cancel_discussion">@lang('chatter::messages.words.cancel')</a>
+
+            	<button style="background-image:none !important;" id="submit_discussion" class="btn btn-success pull-right"><i class="chatter-new"></i> @lang('chatter::messages.discussion.create')</button>
+            	<a style="background-image:none !important;"  href="/{{ Config::get('chatter.routes.home') }}" class="btn btn-default pull-right" id="cancel_discussion"><i class="chatter-delete"></i>@lang('chatter::messages.words.cancel')</a>
             	<div style="clear:both"></div>
             </div>
         </form>

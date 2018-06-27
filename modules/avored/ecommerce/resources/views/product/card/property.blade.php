@@ -72,11 +72,11 @@ $productProperties = $model->getPropertiesAll();
                                 {{ $property->name }}
                             </label>
 
-                            <input type="date"
+                            <input type="text"
                                    name="property[{{ str_random() }}][{{ $property->id  }}]"
-                                   class="form-control"
-                                   value="{{ $productVarcharPropertyValue->value != null ? date_format($productVarcharPropertyValue->value,"Y-m-d") : ""  }}"
-                                   id="property-{{ $property->id }}"/>
+                                   class="form-control datetime"
+                                   value="{{ $productVarcharPropertyValue->value }}"
+                                   id="property-{{ $property_id }}"/>
                         </div>
                     @endif
 
