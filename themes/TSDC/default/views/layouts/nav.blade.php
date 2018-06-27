@@ -24,7 +24,7 @@
 
                     <li class="headerListsItems">
                             <img src="{{asset("storage/images/icones/carte_fidelite.png") }}" alt="Carte fidélité" />
-                            <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Carte fidélité</a>
+                            <a style="font-size:9pt;" class="nav-link" href="{{ route('my-account.fidelite') }}">Carte fidélité</a>
                     </li>
 
                 @guest()
@@ -141,7 +141,7 @@
         </div>
     </div>
 </header>
-   
+
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
