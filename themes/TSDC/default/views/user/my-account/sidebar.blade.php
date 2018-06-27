@@ -35,7 +35,7 @@
                 Mes commandes</a>
             <a href="{{ route('my-account.address.index') }}" class="list-group-item list-group-item-action">
 
-                Addresse </a>
+                Adresse </a>
             <a href="{{ route('my-account.wishlist.list') }}" class="list-group-item list-group-item-action">
 
                 Ma liste de souhaits</a>

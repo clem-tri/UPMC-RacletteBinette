@@ -5,17 +5,18 @@
 
 
 @section('content')
-
+<div class="container">
     <div class="row profile">
         <div class="col-md-3">
             @include('user.my-account.sidebar')
         </div>
         <div class="col-md-9">
-            <div class="title">
-                <h4>Ma liste de souhaits</h4>
-            </div>
+            <div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px;">
+                <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+                    <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Ma liste de souhaits</p></span> </div> </div>
+
             @if(count($wishlists) <= 0)
-                <p>Rien de trouvé dans la liste de souhaits.</p>
+                <p style="color:black; margin-left:15px; margin-right:15px; margin-top:10px;">Rien de trouvé dans la liste de souhaits.</p>
             @else
 
                 <div class="card">
@@ -59,8 +60,8 @@
                         </table>
                     </div>
                 </div>
-
             @endif
         </div>
+    </div>
     </div>
 @endsection

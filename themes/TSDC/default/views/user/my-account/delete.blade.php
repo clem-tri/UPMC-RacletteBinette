@@ -14,11 +14,11 @@
 
             <div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px;">
                 <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
-                    <div class="card-header" style="background-color:#68B42F;"><span class="title_auth"><p style="color:white">Supprimer mon compte et mes donnees personnelles</p></span></div></div>
+                    <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Supprimer mon compte et mes donnees personnelles</p></span></div></div>
 
 
 
-                <p style="color:#68B42F; margin-right:10px; margin-left:10px; margin-top:10px;">
+                <p style="color:black; margin-right:15px; margin-left:15px; margin-top:10px;">
                     Vous pouvez supprimer votre compte.<br/>
                     Sachez toutefois qu'il ne sera PAS possible de le réactiver par la suite.
                     Il s'agit d'une action définitive.
