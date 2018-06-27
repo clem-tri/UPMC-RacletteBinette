@@ -27,10 +27,18 @@
                             <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Carte fidélité</a>
                     </li>
 
+                    @guest()
                     <li class="headerListsItems">
                         <img src="{{asset("storage/images/icones/moncompte.png") }}" alt="Compte utilisateur" />
-                        <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Mon compte</a>
+                        <a style="font-size:9pt;" class="nav-link" href="{{ route('login') }}">Se connecter</a>
                     </li>
+                    @endguest()
+                    @auth()
+                        <li class="headerListsItems">
+                            <img src="{{asset("storage/images/icones/moncompte.png") }}" alt="Compte utilisateur" />
+                            <a style="font-size:9pt;" class="nav-link" href="{{ route('my-account.home') }}">Mon compte</a>
+                        </li>
+                        @endauth
 
                     {{--
                     <li>
@@ -84,25 +92,11 @@
         </ul>
         <ul class="navbar-nav">
 
-            @auth()
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Bienvenue {{ Auth::user()->first_name }} !
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('my-account.home') }}">Mon compte
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-
-            @endauth
 
             @guest()
-            <li class="nav-item active">
+            {{--<li class="nav-item active">
                 <a class="nav-link" href="{{ route('login') }}">Se connecter </a>
-            </li>
+            </li>--}}
             {{--<li class="nav-item">
                 <a class="nav-link" href="{{ route('register') }}">Créer un compte</a>
             </li>--}}
@@ -122,15 +116,15 @@
 <header style="padding: 40px 0;">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            {{--<div class="col-md-6">
                 <a class="navbar-brand" href="{{ route('home') }}">
                     <span style="font-size: 32px; font-weight: 500; margin-top: 10px;">
                         <img src="{{ asset('vendor/tsdc-default/images/logo.svg') }}" alt="logo" class="logo">Chez Raclette et Binette
                     </span>
                 </a>
-            </div>
+            </div>--}}
             <div class="col-md-6">
-                <form class="navbar-form" action="{{ route('search.result') }}" method="get" role="search">
+                {{--<form class="navbar-form" action="{{ route('search.result') }}" method="get" role="search">
                     <div class="input-group" style="padding-top: 14px;">
                         <input type="text" class="form-control" placeholder="Chercher dans le magasin..." name="q">
                         <div class="input-group-btn">
@@ -139,7 +133,7 @@
                             </button>
                         </div>
                     </div>
-                </form>
+                </form>--}}
             </div>
             <!--<div class="col-md-1">
                 <a class="nav-link" href="http://demo.avored.website/cart/view">Cart (0)</a>
