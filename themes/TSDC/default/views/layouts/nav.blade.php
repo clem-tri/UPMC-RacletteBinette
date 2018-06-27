@@ -74,7 +74,7 @@
 
 
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
+{{--<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="padding:0;">
     <div class="container">
         <ul class="navbar-nav mr-auto">
            <li class="nav-item">
@@ -83,37 +83,37 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('calendar.index') }}">Calendrier</a>
             </li>
-            {{--   <li class="nav-item">
+            <li class="nav-item">
                   <a class="nav-link" href="https://www.facebook.com/avoredecommerce/"><i class="fab fa-facebook"></i> Facebook</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="https://twitter.com/avoredecommerce/"><i class="fab fa-twitter"></i> Twitter</a>
-              </li>--}}
+              </li>
         </ul>
         <ul class="navbar-nav">
 
 
             @guest()
-            {{--<li class="nav-item active">
+           <li class="nav-item active">
                 <a class="nav-link" href="{{ route('login') }}">Se connecter </a>
-            </li>--}}
-            {{--<li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('register') }}">Créer un compte</a>
-            </li>--}}
+            </li>
             @endguest()
 
-                {{--<li class="nav-item active">
+                <li class="nav-item active">
                     <a class="nav-link" href="{{ route('cart.view') }}">Panier </a>
-                </li>--}}
-                {{--<li class="nav-item active">
+                </li>
+                <li class="nav-item active">
                     <a class="nav-link" href="{{ route('checkout.index') }}">Caisse</a>
-                </li>--}}
+                </li>
 
         </ul>
     </div>
-</nav>
+</nav>--}}
 
-<header style="padding: 40px 0;">
+<header>
     <div class="container">
         <div class="row">
             {{--<div class="col-md-6">
@@ -151,7 +151,16 @@
 
         <div class="collapse navbar-collapse" id="avored-navbar">
             <ul class="main-navbar navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route("home")}}">Accueil</a>
+                </li>
                 @include('layouts.menu-tree',['menus' => $menus])
+                <li class="nav-item" style="border-left:1px solid white;">
+                    <a class="nav-link" href="{{ route('chatter.home') }}">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('calendar.index') }}">Calendrier</a>
+                </li>
             </ul>
         </div>
     </div>
