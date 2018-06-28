@@ -31,8 +31,11 @@
                 <h1 class="product-name">{{ $product->name }}</h1>
 
                 <div class="product-price">
-                    <span>€</span>
-                    <span class="price">{{ number_format($product->price,2) }}</span>
+                    <h2>
+                        <span>€</span>
+                        <span class="price">{{ number_format($product->price,2) }}</span>
+                    </h2>
+
                 </div>
 
                     @if($product->type == 'BASIC')

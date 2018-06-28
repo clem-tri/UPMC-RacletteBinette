@@ -7,7 +7,7 @@
 
         <div class="caption card-product-bottom">
             <h4 class="center-block">
-                    <a href="{{ route('product.view', $product->slug)}}" class="product-name"
+                    <a href="{{ route('product.view', $product->slug)}}" class="product-name product-listed"
                        title="{{ $product->name }}" style="font-family: Comfortaa;">
                         {{ $product->name }}
                     </a>
