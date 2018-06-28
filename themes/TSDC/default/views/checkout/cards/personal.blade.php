@@ -78,7 +78,7 @@
                     <input type="checkbox" name="register"
                            onclick="if (this.checked == true) jQuery('.register-form').css('display','block');
                                                       else jQuery('.register-form').css('display','none');">
-                    &nbsp;Register Account
+                    &nbsp;M'inscrire
                 </label>
             </div>
 

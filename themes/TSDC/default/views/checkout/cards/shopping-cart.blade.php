@@ -71,7 +71,7 @@
 
             <tr>
                 <td colspan="3" class="text-right  hidden-xs"><strong>Total:</strong></td>
-                <td class="text-right total" data-total="{{ number_format((float)$subTotal, 2, '.', '') }}">
+                <td class="text-right total" data-total="{{ number_format((float)Cart::Total(), 2, '.', '') }}">
                    €{{ number_format((float)Cart::Total(), 2, '.', '') }}</td>
             </tr>
             </tfoot>

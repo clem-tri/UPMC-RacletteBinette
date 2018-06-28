@@ -97,8 +97,8 @@
 
                 var total = parseFloat(subTotal + taxAmount + shippingCost).toFixed(2);
 
-                jQuery('.total').attr('data-total', total);
-                jQuery('.total').html("€" + total);
+               /* jQuery('.total').attr('data-total', total);
+                jQuery('.total').html("€" + total);*/
 
 
             }
