@@ -62,7 +62,7 @@ class CartController extends Controller
             Cart::updateProductTax($slug, $taxAmount);
         }
 
-        return redirect()->back()->with('notificationText', 'Product Added to Cart Successfully!');
+        return redirect()->back()->with('notificationText', 'Produit ajouté au panier!');
     }
 
     public function view()

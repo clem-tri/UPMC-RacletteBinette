@@ -24,7 +24,7 @@
                            id="{{ $shippingOption->identifier() }}"
                            value="{{ $shippingOption->identifier() }}">
 
-                    <label for="{{ $shippingOption->identifier() }}" class="form-check-label">
+                    <label for="{{ $shippingOption->identifier() }}" class="form-check-label" style="color:#68B42F;">
 
                         @if(null === $shippingOption->amount())
                             {{ $shippingOption->name() }}

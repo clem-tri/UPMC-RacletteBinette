@@ -4,8 +4,7 @@
 
     <div class="card-body payment-options" style="background-color:white;">
 
-        <p style="color:#68B42F">Veuillez sélectionner votre méthode de paiement pour cette commande.
-            order.</p>
+        <p style="color:#68B42F">Veuillez sélectionner votre méthode de paiement pour cette commande.</p>
 
         <div class="payment-radio-options">
             @foreach($paymentOptions as $paymentOption)
@@ -20,7 +19,7 @@
                                value="{{ $paymentOption->identifier() }}">
 
                         <label for="{{ $paymentOption->identifier() }}"
-                               class="form-check-label">
+                               class="form-check-label" style="color:#68B42F;">
                             {!! $paymentOption->name() !!}
                         </label>
 
