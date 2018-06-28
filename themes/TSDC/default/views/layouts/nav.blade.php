@@ -142,6 +142,34 @@
     </div>
 </header>
 
+<style>
+
+    .li-style li {
+        margin-left:10px;
+    }
+
+  .li-style li:nth-child(2) {
+      border-bottom:3px solid #E41F21;
+  }
+
+  .li-style li:nth-child(3) {
+      border-bottom:3px solid #141721;
+  }
+
+  .li-style li:nth-child(4) {
+      border-bottom:3px solid #65C6E6;
+  }
+
+  .li-style li:nth-child(5) {
+      border-bottom:3px solid #F18933;
+  }
+
+  .li-style li:nth-child(6) {
+      border-bottom:3px solid #EFE757;
+  }
+
+</style>
+
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
@@ -150,7 +178,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="avored-navbar">
-            <ul class="main-navbar navbar-nav mr-auto">
+            <ul class="main-navbar navbar-nav mr-auto li-style">
                 <li class="nav-item">
                     <a class="nav-link" href="{{route("home")}}">Accueil</a>
                 </li>
