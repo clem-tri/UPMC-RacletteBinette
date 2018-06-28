@@ -19,12 +19,9 @@
                 <p style="color:black; margin-left:15px; margin-right:15px; margin-top:10px;">Rien de trouvé dans la liste de souhaits.</p>
             @else
 
-                <div class="card">
-                    <div class="card-header">
-                        Ma liste de souhaits
-                    </div>
-                    <div class="card-body">
-                        <table class="table table-responsive">
+
+                    <div class="card-body" style="background-color:white;">
+                        <table style="color:#68B42F;" class="table table-responsive">
                             <thead>
                             <th>Nom du produit</th>
                             <th>Image du produit</th>
@@ -61,7 +58,7 @@
                     </div>
                 </div>
             @endif
-        </div>
+       
     </div>
     </div>
 @endsection
