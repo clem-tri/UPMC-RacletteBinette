@@ -84,11 +84,11 @@
         </div>
         <div class="row">
 
-            <div class="col-12">
+            <div class="col-md-9 offset-2 mt-3">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item active">
                         <a data-toggle="tab" class="nav-link" href="#description">
-                            <div class="h4"> DESCRIPTION</div>
+                            <div> DESCRIPTION</div>
                         </a>
                     </li>
 

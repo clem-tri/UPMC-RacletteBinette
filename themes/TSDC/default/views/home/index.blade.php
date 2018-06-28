@@ -21,7 +21,7 @@
             </div>
             <nav aria-label="navigation">
                 <div class="pager" style="position:absolute; bottom:0; padding-bottom:150px; padding-right:50px; right:0;">
-                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="#" role="button">Découvrir</a>
+                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="{{route("product.view", array('slug' => "tondeuse-a-gazon-mcculloch"))}}" role="button">Découvrir</a>
                 </div>
             </nav>
         </div>
@@ -35,7 +35,7 @@
             <h3 style="font-family:'Slim Joe' !important; color:white; text-align:center; font-size:16pt; ">Plante d'exterieur</h3>
             <nav aria-label="navigation">
                 <div class="pager" style="position:absolute; bottom:0; padding-bottom:150px; padding-right:50px; right:0;">
-                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="#" role="button">Découvrir</a>
+                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="{{route('category.view', array('slug' => 'plantes-exterieurs'))}}" role="button">Découvrir</a>
                 </div>
             </nav>
         </div>
@@ -43,7 +43,7 @@
             <h2 style="font-family:'Big John' !important; color:white; text-align:center; font-size:20pt; padding-top:250px;">Visitez notre forum</h2>
             <nav aria-label="navigation">
                 <div class="pager" style="position:relative; bottom:0; padding-top:50px;">
-                    <a class="btn btn-primary" style="background-color:white; font-weight:bold; color:#68B42F; border-color:white; position:relative; display:block; width:100px; margin-right:auto; margin-left:auto;" href="#" role="button">Visiter</a>
+                    <a class="btn btn-primary" style="background-color:white; font-weight:bold; color:#68B42F; border-color:white; position:relative; display:block; width:100px; margin-right:auto; margin-left:auto;" href="{{route('chatter.home')}}" role="button">Visiter</a>
                 </div>
             </nav>
         </div>
@@ -56,7 +56,7 @@
             </div>
             <nav aria-label="navigation">
                 <div class="pager" style="position:absolute; bottom:0; padding-bottom:10px; padding-right:50px; right:0;">
-                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="#" role="button">Voir le produit</a>
+                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="{{ route("product.view", array('slug' => "hereludit-balcon")) }}" role="button">Voir le produit</a>
                 </div>
             </nav>
         </div>
@@ -65,7 +65,7 @@
             </div>
             <nav aria-label="navigation">
                 <div class="pager" style="position:absolute; bottom:0; padding-bottom:10px; padding-right:50px; right:0;">
-                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="#" role="button">Voir le produit</a>
+                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="{{route("product.view", array('slug' => "brouette-jardinage")) }}" role="button">Voir le produit</a>
                 </div>
             </nav>
         </div>
@@ -74,7 +74,7 @@
             </div>
             <nav aria-label="navigation">
                 <div class="pager" style="position:absolute; bottom:0; padding-bottom:10px; padding-right:50px; right:0;">
-                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="#" role="button">Voir le produit</a>
+                    <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="{{route("product.view", array('slug' => "tondeuse-cub-cadet")) }}" role="button">Voir le produit</a>
                 </div>
             </nav>
         </div>
