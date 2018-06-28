@@ -107,7 +107,7 @@
         <div class="col-12 col-md-12" id="border">
             <div class="footer_txt">
                 <p>
-                    <a href="#" target="_blank">CGU</a> • <a href="#" target="_blank" rel="publisher">FAQ</a> • <a href="#" target="_blank">Confidentialité</a> • <a href="#">Mentions légales</a> • <a href="#">Contactez-nous</a>
+                    <a href="#" target="_blank">CGU</a> • <a href="#" target="_blank" rel="publisher">FAQ</a> • <a href="#" target="_blank">Confidentialité</a> • <a href="#">Mentions légales</a> • <a href="{{ route('contact.index') }}">Contactez-nous</a>
                 </p>
             </div>
         </div>

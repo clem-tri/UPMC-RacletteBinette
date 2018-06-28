@@ -161,9 +161,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('calendar.index') }}">Calendrier</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact.index') }}">Nous contacter</a>
-                </li>
             </ul>
         </div>
     </div>
