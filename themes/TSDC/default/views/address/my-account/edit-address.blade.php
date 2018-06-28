@@ -86,9 +86,11 @@
                             @include('partials.forms.text',['name' => 'phone','label' => 'Phone'])
 
 
-                            <div class="form-group">
-                                <button class="btn btn-primary" type="submit">Update Address</button>
-                            </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" style="border:none; background-color:#68B42F !important; color:white !important; background-image:none; display: block; margin : auto; font-size:10pt;">
+                                Mettre à jour l'adresse
+                            </button>
+                        </div>
 
 
                         </form>
