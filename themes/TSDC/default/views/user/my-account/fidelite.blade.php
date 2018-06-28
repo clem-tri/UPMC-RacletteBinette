@@ -17,10 +17,7 @@
                 <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Numero de carte fidelite</p></span> </div> </div>
 
 
-            <div class="profile-content">
-
-
-
+            <div class="card-body" style="background-color:white;">
 
                         @if($fidelite != null)
 
