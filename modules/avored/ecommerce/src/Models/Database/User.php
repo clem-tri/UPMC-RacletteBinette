@@ -3,6 +3,7 @@
 namespace AvoRed\Ecommerce\Models\Database;
 
 use AvoRed\Framework\Image\LocalFile;
+use AvoRed\Framework\Models\Database\Order;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -41,6 +42,10 @@ class User extends Authenticatable
     public function addresses()
     {
         return $this->hasMany(Address::class);
+    }
+
+    public function orders(){
+        return $this->hasMany(Order::class);
     }
 
     public function getShippingAddress()
