@@ -12,7 +12,7 @@
 
 @section('content')
 
-    <p style="margin-left:35px; font-size:9pt; font-family:'Comfortaa';">Vous êtes dans : <a href="index.php" title="Accueil">Accueil</a></p>
+    {{--<p style="margin-left:35px; font-size:9pt; font-family:'Comfortaa';">Vous êtes dans : <a href="index.php" title="Accueil">Accueil</a></p>--}}
 
     <br/>
     <div class="row" style="width:100%;">
