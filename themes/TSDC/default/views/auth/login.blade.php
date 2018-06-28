@@ -6,10 +6,13 @@
 
 @section('content')
     <div class="row mt-4 mb-4 justify-content-center">
+        <div class="col-9 offset-3">
+            <img src="{{asset("storage/images/login_frog.png") }}" style="position:relative; float:left;">
+        </div>
         <div class="col-6">
             <div class="card">
                 <div class="card-body">
-                    <div class="card-header" style="border-bottom-color:white; background-color:#68B42F;"><span class="title_auth"><p style="color:white;">Se connecter</p></span></div>
+                    <div class="card-header" style="border-bottom-color:white; background-color:#68B42F;"><span class="title_auth"><p style="color:white; font-family: 'Big John'">Se connecter</p></span></div>
                     <div class="col-12 panel-login" style="padding-top:40px;">
                         <form method="POST"
                               action="{{ route('login.post') }}">

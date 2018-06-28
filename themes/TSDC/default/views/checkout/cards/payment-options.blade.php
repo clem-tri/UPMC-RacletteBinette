@@ -1,8 +1,10 @@
-<div class="card mb-3">
-    <div class="card-header">Méthode de paiement</div>
-    <div class="card-body payment-options">
+<div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px; margin-top:20px;">
+    <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+        <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Méthode de paiement</p></span> </div> </div>
 
-        <p>Veuillez sélectionner votre méthode de paiement pour cette commande.
+    <div class="card-body payment-options" style="background-color:white;">
+
+        <p style="color:#68B42F">Veuillez sélectionner votre méthode de paiement pour cette commande.
             order.</p>
 
         <div class="payment-radio-options">

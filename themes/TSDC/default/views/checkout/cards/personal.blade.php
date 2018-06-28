@@ -1,8 +1,8 @@
-<div class="card">
-    <div class="card-header">
-        Vos détails personnels
-    </div>
-    <div class="card-body">
+<div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px;">
+    <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+        <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Vos détails personnels</p></span> </div> </div>
+
+    <div class="card-body" style="background-color:white;">
         @php
         $firstName = $lastName = $phone = "";
         if (Auth::check()) {
@@ -14,7 +14,7 @@
 
         <div class="row">
             <div class="form-group  col-6">
-                <label class="control-label" for="input-user-first-name">Prénom</label>
+                <label style="color:#68B42F; font-weight: bold;" class="control-label" for="input-user-first-name">Prénom :</label>
                 <input type="text" name="billing[first_name]"
                        value="{{ $firstName }}" placeholder="Prénom"
                        id="input-user-first-name"
@@ -33,7 +33,7 @@
             </div>
 
             <div class="form-group  col-6">
-                <label class="control-label" for="input-user-last-name">Nom</label>
+                <label style="color:#68B42F; font-weight: bold;" class="control-label" for="input-user-last-name">Nom :</label>
                 <input type="text" name="billing[last_name]"
                        value="{{ $lastName }}" placeholder="Nom"
                        id="input-user-last-name"
@@ -53,8 +53,8 @@
 
         @if(!Auth::check())
 
-            <div class="form-group">
-                <label class="control-label" for="input-user-email">E-Mail</label>
+            <div style="color:#68B42F; font-weight: bold;" class="form-group">
+                <label class="control-label" for="input-user-email">E-Mail :</label>
                 <input
                         type="text"
                         name="user[email]" placeholder="E-Mail"
@@ -74,7 +74,7 @@
             </div>
 
             <div class="form-group">
-                <label>
+                <label style="color:#68B42F; font-weight: bold;">
                     <input type="checkbox" name="register"
                            onclick="if (this.checked == true) jQuery('.register-form').css('display','block');
                                                       else jQuery('.register-form').css('display','none');">
@@ -86,8 +86,8 @@
             <div class="register-form" style="display: none;">
                 <div class="row">
                     <div class="form-group  col-6">
-                        <label class="control-label"
-                               for="input-billing-password">Mot de passe</label>
+                        <label style="color:#68B42F" class="control-label"
+                               for="input-billing-password">Mot de passe :</label>
                         <input type="password" name="user[password]" placeholder="Mot de passe"
                                id="input-billing-password"
 
@@ -104,7 +104,7 @@
                         @endif
                     </div>
                     <div class="form-group  col-6">
-                        <label class="control-label" for="input-billing-confirm">Confirmer mot de passe</label>
+                        <label style="color:#68B42F; font-weight: bold;" class="control-label" for="input-billing-confirm">Confirmer mot de passe :</label>
                         <input type="password" name="user[confirm_password]"
                                placeholder="Password Confirm"
                                id="input-billing-confirm"
@@ -127,7 +127,7 @@
         @endif
 
         <div class="form-group">
-            <label class="control-label" for="input-billing-phone">Téléphone</label>
+            <label style="color:#68B42F; font-weight: bold;" class="control-label" for="input-billing-phone">Téléphone :</label>
             <input type="text" name="billing[phone]" value="{{ $phone }}" placeholder="Téléphone"
                    id="input-billing-phone"
                    @if($errors->has('billing.phone'))

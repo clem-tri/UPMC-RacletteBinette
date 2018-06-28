@@ -1,9 +1,9 @@
-<div class="card mb-3">
-    <div class="card-header">
-        Méthode de livraison
-    </div>
-    <div class="card-body shipping-option">
-        <p>Veuillez sélectionner votre méthode de livraison pour cette commande.</p>
+<div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px; margin-top:20px;">
+    <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+        <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Méthode de livraison</p></span> </div> </div>
+
+    <div class="card-body shipping-option" style="background-color:white;">
+        <p style="color:#68B42F;">Veuillez sélectionner votre méthode de livraison pour cette commande.</p>
 
         @foreach($shippingOptions as $shippingOption)
 

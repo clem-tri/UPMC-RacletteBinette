@@ -14,7 +14,7 @@
 
             <div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px;">
                 <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
-                    <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Recuperer mes donnees personnelles</p></span> </div> </div>
+                    <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Récupérer mes données personnelles</p></span> </div> </div>
 
 
                 <form action="{{ route('my-account.download-personnal-file-infos') }}" method="get">

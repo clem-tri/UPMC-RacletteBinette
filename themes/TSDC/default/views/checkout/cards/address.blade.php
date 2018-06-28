@@ -1,7 +1,8 @@
-<div class="card mt-3">
-    <div class="card-header">Adresse</div>
+<div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px; margin-top:20px; ">
+    <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+        <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Adresse</p></span> </div> </div>
 
-    <div class="card-body">
+    <div class="card-body" style="background-color:white;">
 
         <div id="payment-address-new">
 
@@ -14,7 +15,7 @@
 
             @if(NULL === $address)
                 <div class="form-group">
-                    <label class="control-label" for="input-billing-address-1">Adresse 1</label>
+                    <label style="color:#68B42F; font-weight: bold;" class="control-label" for="input-billing-address-1">Adresse 1 :</label>
                     <input type="text" name="billing[address1]" value="" placeholder="Adresse 1"
                            id="input-billing-address-1"
                            @if($errors->has('billing.address1'))
@@ -31,7 +32,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="input-billing-address-2">Adresse 2</label>
+                    <label style="color:#68B42F; font-weight: bold;" class="control-label" for="input-billing-address-2">Adresse 2 :</label>
                     <input type="text" name="billing[address2]" value="" placeholder="Adresse 2"
                            id="input-billing-address-2"
 
@@ -50,7 +51,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="country">Pays</label>
+                    <label style="color:#68B42F; font-weight: bold;" for="country">Pays :</label>
                     <select name="billing[country_id]" data-name="country_id"
                             class="{{ $errors->has('billing.country_id') ? "is-invalid" : "" }}
                                     billing-country form-control billing tax-calculation"
@@ -92,7 +93,7 @@
 
 
                     <div class="form-group ">
-                        <label class="control-label" for="input-billing-city">Ville</label>
+                        <label style="color:#68B42F; font-weight: bold;" class="control-label" for="input-billing-city">Ville :</label>
                         <input type="text" data-name="city" name="billing[city]"
                                placeholder="Ville"
                                id="input-billing-city"
@@ -112,7 +113,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="input-billing-postcode">Code postal</label>
+                    <label style="color:#68B42F; font-weight: bold;" class="control-label" for="input-billing-postcode">Code postal :</label>
                     <input type="text" data-name="postcode" name="billing[postcode]" value=""
                            placeholder="Code postal"
                            id="input-billing-postcode"
@@ -156,7 +157,7 @@
 
 
             <div class="form-group col-12">
-                <label for="use_different_shipping_address">
+                <label style="color:#68B42F; font-weight: bold;" for="use_different_shipping_address">
                     <input type="checkbox" id="use_different_shipping_address" name="use_different_shipping_address"
                            onclick="if (this.checked == true){
                                                             jQuery('.different-shipping-form').css('display','block');

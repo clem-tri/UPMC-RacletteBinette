@@ -32,11 +32,12 @@
 
                         @include('checkout.cards.shopping-cart')
 
-                        <div class="card mb-3">
-                            <div class="card-header">
-                                Your Comment
-                            </div>
-                            <div class="card-body">
+                        <div class="card mb-3" style="margin-top:20px;">
+                            <div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px;">
+                                <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+                                    <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Votre commentaire</p></span> </div> </div>
+
+                                <div class="card-body" style="background-color:white;">
                                 <div class="form-group">
                                     <textarea name="comment" rows="3" class="form-control"></textarea>
 
@@ -47,7 +48,7 @@
                                     <input id="agree" type="checkbox"
                                            class="form-check-input{{  $errors->has('agree') ? " is-invalid" : "" }}"
                                            name="agree" value="1"/>
-                                    <label for="agree" class="form-check-label">
+                                    <label style="color:#68B42F; font-weight: bold;"for="agree" class="form-check-label">
                                        J'ai lu et accepté les
                                         <a href="{{ $termConditionPageUrl }}" target="_blank"
                                            class="{{  $errors->has('agree') ? " text-danger" : "" }}  agree">
@@ -67,7 +68,7 @@
 
                                 <div class="payment float-right clearfix">
                                     <input type="button" class="btn btn-primary"
-                                           data-loading-text="Loading..."
+                                           style="background-color:#68B42F !important; border:none;" data-loading-text="Loading..."
                                            id="place-order-button"
                                            value="Valider">
 
