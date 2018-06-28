@@ -26,7 +26,6 @@
 
                 Supprimer compte</a>
 
-
             <a href="{{ route('my-account.upload-image') }}" class="list-group-item list-group-item-action">
 
                 Changer d'image</a>

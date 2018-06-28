@@ -5,25 +5,19 @@
 
 
 @section('content')
-
+<div class="container">
 <div class="row profile">
 
     <div class="col-3">
         @include('user.my-account.sidebar')
     </div>
     <div class="col-9">
-        <div class="card">
-            <div class="card-body">
+        <div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px;">
+            <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+                <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Numero de carte fidelite</p></span> </div> </div>
 
-                <div class="card-header" style="background-color:#68B42F;">
-                    <span class="title_auth">
-                        <p>
-                             Numero de carte de fidelite
-                        </p>
-                    </span>
-                </div>
 
-                <div class="profile-content">
+            <div class="profile-content">
 
 
 
@@ -37,9 +31,9 @@
                             {{ csrf_field() }}
                             <label for="numero_fidelite"></label>
                             <input id="numero_fidelite" class="form-control" name="numero_fidelite" type="text" maxlength="8" />
-                            <div class="form-group">
 
-                                <button type="submit" class="btn btn-primary" style="background-image:none; display: block; margin : auto; font-size:10pt;">
+                            <div class="form-group" style="margin-top:20px;">
+                                <button type="submit" class="btn btn-primary" style="border:none; background-color:#68B42F !important; color:white !important; background-image:none; display: block; margin : auto; font-size:10pt;">
                                     Valider
                                 </button>
                             </div>
@@ -52,14 +46,11 @@
 
 
 
-
                 </div>
             </div>
-
-
-
-            </div>
         </div>
+    </div>
+</div>
 
 
     </div>
