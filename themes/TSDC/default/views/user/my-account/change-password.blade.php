@@ -5,6 +5,7 @@
 
 
 @section('content')
+    <div class="container">
     <div class="row profile">
         <div class="col-md-3">
             @include('user.my-account.sidebar')
@@ -74,11 +75,10 @@
                         </div>
 
                     </form>
-
                 </div>
             </div>
-
         </div>
+    </div>
     </div>
 
 @endsection
