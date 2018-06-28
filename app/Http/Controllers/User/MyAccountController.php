@@ -3,18 +3,21 @@
 namespace App\Http\Controllers\User;
 
 use App\Fidelite;
+use App\OrderProduct;
 use AvoRed\Ecommerce\Http\Requests\ChangePasswordRequest;
 use App\Http\Requests\UploadUserImageRequest;
 use App\Http\Requests\UserProfileRequest;
 use AvoRed\Ecommerce\Models\Database\Address;
 use AvoRed\Ecommerce\Models\Database\Country;
 use AvoRed\Ecommerce\Models\Database\User;
+use AvoRed\Review\Models\Database\ProductReview;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use AvoRed\Framework\Image\Facade as Image;
 use Illuminate\Support\Facades\File;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Schema;
 
 class MyAccountController extends Controller
 {
@@ -189,7 +192,18 @@ class MyAccountController extends Controller
     }
 
     public function deletePost(){
-        User::destroy(Auth::user()->id);
+        $user = Auth::user();
+
+        foreach ($user->orders()->get() as $order){
+            OrderProduct::where('order_id', $order->id)->delete();
+        }
+
+        ProductReview::where('user_id', $user->id)->delete();
+
+        $user->orders()->delete();
+        $user->addresses()->delete();
+
+        User::destroy($user->id);
 
         return redirect()->route('home');
     }

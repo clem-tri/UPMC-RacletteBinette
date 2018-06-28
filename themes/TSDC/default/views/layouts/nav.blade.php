@@ -24,19 +24,19 @@
 
                     <li class="headerListsItems">
                             <img src="{{asset("storage/images/icones/carte_fidelite.png") }}" alt="Carte fidélité" />
-                            <a style="font-size:9pt;" class="nav-link" href="{{ route('my-account.fidelite') }}">Carte fidélité</a>
+                            <a style="font-size:9pt; color:black;" class="nav-link" href="{{ route('my-account.fidelite') }}">Carte fidélité</a>
                     </li>
 
                 @guest()
                     <li class="headerListsItems">
                         <img src="{{asset("storage/images/icones/moncompte.png") }}" alt="Compte utilisateur" />
-                        <a style="font-size:9pt;" class="nav-link" href="{{ route('login') }}">Se connecter</a>
+                        <a style="font-size:9pt; color:black;" class="nav-link" href="{{ route('login') }}">Se connecter</a>
                     </li>
                     @endguest()
                     @auth()
                         <li class="headerListsItems">
                             <img src="{{asset("storage/images/icones/moncompte.png") }}" alt="Compte utilisateur" />
-                            <a style="font-size:9pt;" class="nav-link" href="{{ route('my-account.home') }}">Mon compte</a>
+                            <a style="font-size:9pt; color:black;" class="nav-link" href="{{ route('my-account.home') }}">Mon compte</a>
                         </li>
                         @endauth
 
@@ -50,12 +50,12 @@
 
                     <li class="headerListsItems">
                             <img src="{{asset("storage/images/icones/panier.png") }}" alt="Mon panier" />
-                            <a style="font-size:9pt;" class="nav-link" href="{{ route('cart.view') }}">Panier</a>
+                            <a style="font-size:9pt; color:black;" class="nav-link" href="{{ route('cart.view') }}">Panier</a>
                     </li>
 
                     <li class="headerListsItems">
                             <img src="{{asset("storage/images/icones/caisse.png") }}" alt="Caisse" />
-                            <a style="font-size:9pt;" class="nav-link" href="{{ route('checkout.index') }}">Caisse</a>
+                            <a style="font-size:9pt; color:black;" class="nav-link" href="{{ route('checkout.index') }}">Caisse</a>
                     </li>
                 </ul>
             </div>
