@@ -12,10 +12,12 @@
                 @include('user.my-account.sidebar')
             </div>
             <div class="col-md-9">
-                <div class="card">
-                    <div class="card-header">Edit Address</div>
-                    <div class="card-body">
-                        <form action=" {{ route('my-account.address.update',  $model->id) }}" method="post">
+                <div class="card" style="background-color:#fff; border:2px solid #68B42F; border-radius:12px;">
+                    <div class="card-body" style="background-color:#68B42F; border-bottom-left-radius:0px; border-bottom-right-radius:0px;">
+                        <div class="card-header" style="background-color:#68B42F; border-color:white;"><span class="title_auth"><p style="color:white">Modifier l'adresse</p></span> </div> </div>
+
+                    <div class="card-body" style="background-color: white;">
+                    <form action=" {{ route('my-account.address.update',  $model->id) }}" method="post">
                             @method("put")
                             @csrf
 
@@ -52,7 +54,7 @@
                                 <div class="col-6">
                                     <div class="form-group">
 
-                                        <label for="country" class="control-label">Country</label>
+                                        <label style="color:#68B42F; font-weight:bold;" for="country" class="control-label">Pays :</label>
                                         <select name="country_id"
                                                 @if($errors->has('country_id'))
                                                 class="is-invalid form-control"
@@ -84,9 +86,11 @@
                             @include('partials.forms.text',['name' => 'phone','label' => 'Phone'])
 
 
-                            <div class="form-group">
-                                <button class="btn btn-primary" type="submit">Update Address</button>
-                            </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" style="border:none; background-color:#68B42F !important; color:white !important; background-image:none; display: block; margin : auto; font-size:10pt;">
+                                Mettre à jour l'adresse
+                            </button>
+                        </div>
 
 
                         </form>

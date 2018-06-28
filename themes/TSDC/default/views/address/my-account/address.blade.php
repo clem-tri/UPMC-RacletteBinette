@@ -33,12 +33,9 @@
                                             <span>Adresse de facturation</span>
                                         @endif
 
-                                        <span class="float-right">
-                                            <a href="{{ route('my-account.address.edit', $address->id)}}">Modifier</a>
-                                        </span>
 
-                                    <div class="card-body ">
-                                        <table class="table table-responsive">
+                                    <div class="card-body" style="background-color:white;">
+                                        <table class="table table-responsive" style="color:#68B42F">
                                             <tbody>
                                             <tr>
                                                 <th>Prénom</th>
@@ -74,6 +71,13 @@
 
 
                                         </table>
+                                        <span style="margin-top:30px; float:left !important; background-color:#68B42F;">
+                                           <div class="pager" style="position:absolute; bottom:0;">
+                                                <a class="btn btn-primary" style="background-color:#68B42F; border-color:white;" href="{{ route('my-account.address.edit', $address->id)}}" role="button">Modifier</a>
+                                            </div>
+                                        </span>
+
+
                                     </div>
                             </div>
 
