@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="row">
+    <div class="row col-md-9">
         <h2> Résultats pour: "{{ $queryParam }}"</h2>
 
         <div class="col-12">

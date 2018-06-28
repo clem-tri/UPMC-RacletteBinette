@@ -11,7 +11,7 @@
                 <div class="actual-image-thumbnail">
                     <img class="img-thumbnail img-tag img-responsive"
                         data-path="{{ $image->path->relativePath }}"
-                        src="{{ ($image->path->smallUrl) }}"/>
+                        src="{{ ($image->path->relativePath) }}"/>
                     <input type="hidden" name="image[{{ $image->id }}][path]" value="{{ $image->path->relativePath }}"/>
                     @if($image->is_main_image)
                         <input type="hidden" class="is_main_image_hidden_field"
