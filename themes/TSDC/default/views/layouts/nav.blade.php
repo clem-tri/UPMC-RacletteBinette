@@ -148,23 +148,23 @@
         margin-left:10px;
     }
 
-  .li-style li:nth-child(2) {
+  .main-navbar > li:nth-child(2) {
       border-bottom:3px solid #E41F21;
   }
 
-  .li-style li:nth-child(3) {
+    .main-navbar > li:nth-child(3) {
       border-bottom:3px solid #141721;
   }
 
-  .li-style li:nth-child(4) {
+    .main-navbar > li:nth-child(4) {
       border-bottom:3px solid #65C6E6;
   }
 
-  .li-style li:nth-child(5) {
+    .main-navbar > li:nth-child(5) {
       border-bottom:3px solid #F18933;
   }
 
-  .li-style li:nth-child(6) {
+    .main-navbar > li:nth-child(6) {
       border-bottom:3px solid #EFE757;
   }
 
