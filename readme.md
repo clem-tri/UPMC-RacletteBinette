@@ -12,11 +12,11 @@ Boutique e-commerce de jardinage avec Laravel et Avored
 
 4) `npm install`
 
-5) Déplacer le contenu du dossier migrations dans un autre répertoire temporairement
+5) Déplacer le contenu du dossier database/migrations dans un autre répertoire temporairement
 
 6) `php artisan avored:install`
 
-7) Re mettre les fichiers de migrations dans le dossier migrations
+7) Re mettre les fichiers déplacés précedemment dans database/migrations
 
 8) `php artisan migrate`
 
