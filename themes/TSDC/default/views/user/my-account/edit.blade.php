@@ -22,14 +22,14 @@
 
                             @csrf
 
-                            @include('partials.forms.text',['name' => 'first_name','label' => 'First Name','model' => $user])
-                            @include('partials.forms.text',['name' => 'last_name','label' => 'Last Name','model' => $user])
+                            @include('partials.forms.text',['name' => 'first_name','label' => 'Prénom','model' => $user])
+                            @include('partials.forms.text',['name' => 'last_name','label' => 'Nom','model' => $user])
                             @include('partials.forms.text',['name' => 'email','label' => 'Email','model' => $user,
                                                     'attributes' => ['disabled' => true,'class' => 'form-control']])
 
 
-                            @include('partials.forms.text',['name' => 'phone','label' => 'Phone','model' => $user])
-                            @include('partials.forms.text',['name' => 'company_name','label' => 'Company Name','model' => $user])
+                            @include('partials.forms.text',['name' => 'phone','label' => 'Téléphone','model' => $user])
+                            {{--@include('partials.forms.text',['name' => 'company_name','label' => 'Company Name','model' => $user])--}}
 
 
 

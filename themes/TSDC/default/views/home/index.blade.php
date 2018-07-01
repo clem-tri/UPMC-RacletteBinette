@@ -17,7 +17,7 @@
     <br/>
     <div class="row" style="width:100%;">
         <div class="col-md-11 col-centered produitEnUne col-md-offset-1" style="background-size:cover; min-height:400px;">
-            <div class="circle" style="padding-top:35px; margin-left:230px; margin-top:70px; border-radius:140px; width:280px; height:280px; float:left; background-color:white;"><h3 style="font-size:40pt; color:#E41F21; font-family: 'Big John'; padding-top:20px;">129e</h3><h3 style="color:black; font-size:14pt; font-family: 'Slim Joe';">Tondeuse a gazon Mccluccoh</h3><h3 style="color:black; font-size:7pt; font-family: 'Arial';"><i>Offre valable jusqu'au 3 juillet</i></h3>
+            <div class="circle" style="padding-top:35px; margin-left:230px; margin-top:70px; border-radius:140px; width:280px; height:280px; float:left; background-color:white;"><h3 style="font-size:40pt; color:#E41F21; font-family: 'Big John'; padding-top:20px;">129e</h3><h3 style="color:black; font-size:14pt; font-family: 'Slim Joe';">Tondeuse a gazon McCulloch</h3><h3 style="color:black; font-size:7pt; font-family: 'Arial';"><i>Offre valable jusqu'au 3 juillet</i></h3>
             </div>
             <nav aria-label="navigation">
                 <div class="pager" style="position:absolute; bottom:0; padding-bottom:150px; padding-right:50px; right:0;">
