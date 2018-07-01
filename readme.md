@@ -4,18 +4,20 @@ Boutique e-commerce de jardinage avec Laravel et Avored
 
 ## Install
 
-1) Configurer la BDD dans le fichier .env 
+1) Faire une copie du fichier env.exemple et la renommer en .env
 
-2) `composer install`
+2) Configurer la BDD dans le fichier .env
 
-3) `npm install`
+3) `composer install`
 
-4) Déplacer le contenu du dossier migrations dans un autre répertoire temporairement
+4) `npm install`
 
-5) `php artisan avored:install`
+5) Déplacer le contenu du dossier database/migrations dans un autre répertoire temporairement
 
-6) Re mettre les fichiers de migrations dans le dossier migrations
+6) `php artisan avored:install`
 
-7) `php artisan migrate`
+7) Re mettre les fichiers déplacés précedemment dans database/migrations
+
+8) `php artisan migrate`
 
 
